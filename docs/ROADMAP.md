@@ -39,7 +39,45 @@ aim at two or three Q1 journal papers that build on the existing themes.
 
 ## 3. Proposed projects
 
-### P1: Leakage-free re-evaluation of imbalance-aware IDS pipelines (start now, 2–3 months)
+### Main project: FDR-controlled intrusion detection for unseen attacks and new networks
+
+*Motivation.* On CIC-style benchmarks, flow classification with a random split is saturated:
+XGBoost reaches AUROC ≈ 1.0, often through testbed shortcuts (destination port, TTL, window
+size). The open problems are elsewhere:
+(i) attack families never seen in training;
+(ii) deployment on a network other than the training one;
+(iii) operating at the alert budgets a SOC can afford, with a false-alarm rate that holds.
+
+*Question.* Can conformal novelty detection give an IDS a finite-sample guarantee on the
+false-discovery rate among its alerts, even for unseen attack families? Can it keep that
+guarantee, or degrade gracefully, when moved to a new network?
+
+*Method.*
+- Score: fuse a supervised detector (GBDT) for known attacks with a benign-only one-class score
+  for novel ones.
+- Turn scores into conformal p-values against benign calibration flows.
+- Use Benjamini–Hochberg for FDR-controlled alerting (Bates et al., 2023).
+- Use weighted conformal (Tibshirani et al., 2019) with label-free domain weights for network
+  shift.
+- Send abstained or borderline flows to an analyst (link to active learning, 2020). Explain
+  alerts by attributing the conformal score (link to XAI, 2020/2021).
+
+*Evaluation.*
+- Leave-one-family-out on CIC-IDS2017, CSE-CIC-IDS2018, CICIoT2023, CICIoMT2024 and
+  Edge-IIoTset.
+- Cross-network on the NetFlow v3 family, which shares one feature schema.
+- Metrics: realized FPR/FDR vs target, recall on unseen families at FPR 1e-3/1e-4, and analyst
+  workload.
+
+*Feasibility check (running now).*
+- E1, shortcut index: best single-feature and depth-2 tree AUROC per dataset.
+- E2, leave-one-family-out recall gap.
+- E3, cross-network AUROC matrix and how far A-calibrated thresholds drift on B.
+Code: `src/idsbench/feasibility/`. Results: `results/feasibility/SUMMARY.md`.
+
+*Targets.* IEEE TIFS / TDSC, Computers & Security.
+
+### Side project: leakage-free re-evaluation of imbalance-aware pipelines (short reproducibility paper)
 
 *Question.* Do the gains reported for augmentation (SMOTE-Tomek, conditional GANs, filtered
 synthetic data) and adaptive ensembles survive a leakage-free protocol: official splits,
@@ -70,20 +108,7 @@ dedup across splits, resampling only inside the training fold, and proper statis
 helps on minority classes, and an open benchmark. Target venues: Computers & Security,
 IEEE TNSM, JNCA, or a reproducibility track (e.g. ACM AISec, DIMVA).
 
-### P2: Conformal / selective IDS under distribution shift (4–6 months, builds on the 2026 uncertainty papers)
-
-*Question.* Under cross-dataset and temporal shift, can conformal prediction sets plus
-abstention keep a guaranteed error rate on the cases the IDS accepts, while sending a
-controlled fraction to analysts?
-
-*Design.* Train on dataset A or time window t and test on B or t+k. Compare split-conformal,
-Mondrian (class-conditional) conformal, adaptive conformal inference for drift, and the
-earlier fuzzy-conformal GNN. Report coverage, set size, abstention rate, and analyst workload
-versus missed attacks. Link to active learning (2020): queried labels are the abstained cases.
-
-*Target.* IEEE TIFS (stretch), IEEE TDSC, Computers & Security.
-
-### P3: Pretrained flow encoder for cross-dataset IDS (6–9 months, builds on Transformer/LLM-embedding work)
+### Follow-up: pretrained flow encoder for cross-dataset IDS (builds on Transformer/LLM-embedding work)
 
 *Question.* Does self-supervised pretraining on unlabeled flows from several datasets (masked
 feature modelling or contrastive learning on a common NetFlow v9 feature set, e.g. the
@@ -97,12 +122,13 @@ Computer Networks or TNSM for the system side.
 
 ## 4. Order of work
 
-1. Week 1–2: finish `idsbench` on CIC-IDS2017, CICIoT2023 and CICIoMT2024, then run the
-   leakage grid (P1).
-2. Week 3–4: add CSE-CIC-IDS2018, Edge-IIoTset and the NetFlow v3 cross-dataset split; run
-   10 seeds and produce CD diagrams.
-3. Month 2: write P1. In parallel, set up the cross-dataset splits P2 needs (they reuse P1 code).
-4. Month 3+: P2 experiments; collect the NetFlow-schema corpus for P3.
+1. Now: feasibility experiments E1–E3. Decide go / no-go from the unseen-family recall gap
+   and the cross-network FPR drift.
+2. Month 1–2: conformal method (fusion score, BH, weighted conformal); ablations; analyst
+   workload curves.
+3. Month 3: write the main paper. In parallel, write the side reproducibility paper from the
+   same benchmark code.
+4. Later: pretrained flow encoder (follow-up).
 
 ## 5. Ground rules for the code in this repo
 
