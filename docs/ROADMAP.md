@@ -49,9 +49,15 @@ dedup across splits, resampling only inside the training fold, and proper statis
 - Factors: protocol {leaky, clean} × dedup {no, yes} × sampler {none, ROS, SMOTE,
   SMOTE-Tomek, CGAN, CGAN+MC-filter, full chain} × model {LR, NB, RF, XGB, LGBM, MLP,
   soft-vote, replicator ensemble}.
-- Datasets: NSL-KDD (official KDDTrain+/KDDTest+), CICIoT2023 (8- and 34-class),
-  UNSW-NB15 (official split), CIC-IDS2017 (corrected version, Engelen et al. 2021).
-  ToN-IoT is optional.
+- Datasets (modern, flow-based):
+  - Enterprise: CIC-IDS2017 (preferably the corrected version, Engelen et al. 2021) and
+    CSE-CIC-IDS2018 (or the BCCC revision).
+  - IoT/IIoT/IoMT: CICIoT2023 (8 and 34 classes), CICIoMT2024, Edge-IIoTset, and
+    CIC-IIoT-2025 (DataSense) once access is sorted.
+  - Cross-dataset: the NetFlow v3 family (NF-UNSW-NB15-v3, NF-ToN-IoT-v3, NF-CICIDS2018-v3).
+    These share one feature schema, which allows train-on-A / test-on-B.
+  - NSL-KDD is legacy and is used only to reproduce the case-study claims. It is not part of
+    the main benchmark.
 - Metrics: macro-F1, per-class F1 for minority classes, MCC, FPR and FNR, plus cost (fit time,
   latency).
 - Statistics: ≥10 seeds, Friedman + Nemenyi critical-difference diagrams, bootstrap CIs. Do not
@@ -91,8 +97,10 @@ Computer Networks or TNSM for the system side.
 
 ## 4. Order of work
 
-1. Week 1–2: finish `idsbench` on NSL-KDD and CICIoT2023, then run the leakage grid (P1).
-2. Week 3–4: add UNSW-NB15 and CIC-IDS2017 (corrected), 10 seeds, and CD diagrams.
+1. Week 1–2: finish `idsbench` on CIC-IDS2017, CICIoT2023 and CICIoMT2024, then run the
+   leakage grid (P1).
+2. Week 3–4: add CSE-CIC-IDS2018, Edge-IIoTset and the NetFlow v3 cross-dataset split; run
+   10 seeds and produce CD diagrams.
 3. Month 2: write P1. In parallel, set up the cross-dataset splits P2 needs (they reuse P1 code).
 4. Month 3+: P2 experiments; collect the NetFlow-schema corpus for P3.
 
