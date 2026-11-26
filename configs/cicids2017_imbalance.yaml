@@ -1,0 +1,8 @@
+name: cicids2017_imbalance
+dataset: {name: cicids2017, label: family, n_per_class_cap: 20000}
+protocols: [clean]
+dedup: [false, true]
+samplers: [none, smote, smote_tomek]
+models: [lgbm, rf, soft_vote]
+seeds: [0, 1, 2, 3, 4]
+cgan: {epochs: 50}

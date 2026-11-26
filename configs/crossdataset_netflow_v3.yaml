@@ -1,0 +1,12 @@
+# Train on one NetFlow dataset and test on another, with binary benign/attack labels.
+# Needs two NetFlow v3 mirrors; at the time of writing only NF-ToN-IoT (v2 fallback) is
+# reachable, so this config fails with a clear error until a second mirror is available.
+name: crossdataset_netflow_v3
+train_dataset: {name: netflow_v3, dataset: NF-ToN-IoT-v3, label: binary}
+test_dataset: {name: netflow_v3, dataset: NF-UNSW-NB15-v3, label: binary}
+protocols: [clean]
+dedup: [false, true]
+samplers: [none, smote]
+models: [lgbm, rf]
+seeds: [0, 1, 2, 3, 4]
+cgan: {epochs: 50}

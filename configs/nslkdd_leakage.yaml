@@ -1,0 +1,8 @@
+name: nslkdd_leakage
+dataset: {name: nslkdd, label: 5class}
+protocols: [clean, leaky]
+dedup: [false, true]
+samplers: [none, smote, smote_tomek]
+models: [lgbm, rf, soft_vote, replicator]
+seeds: [0, 1, 2, 3, 4]
+cgan: {epochs: 50}

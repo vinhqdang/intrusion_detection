@@ -1,0 +1,8 @@
+name: nslkdd_imbalance
+dataset: {name: nslkdd, label: 5class}
+protocols: [clean]
+dedup: [true]
+samplers: [none, ros, smote, smote_tomek, cgan, cgan_mcfilter, smote_tomek_cgan_mcfilter]
+models: [lgbm_balanced, lgbm, rf, soft_vote, replicator]
+seeds: [0, 1, 2, 3, 4]
+cgan: {epochs: 50}

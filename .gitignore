@@ -221,3 +221,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# idsbench: raw data and experiment outputs
+data/*
+!data/.gitkeep
+results/raw/
