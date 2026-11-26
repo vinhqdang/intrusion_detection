@@ -75,6 +75,36 @@ guarantee, or degrade gracefully, when moved to a new network?
 - E3, cross-network AUROC matrix and how far A-calibrated thresholds drift on B.
 Code: `src/idsbench/feasibility/`. Results: `results/feasibility/SUMMARY.md`.
 
+*Feasibility outcome (2026-11-26): go.* Full numbers are in
+`results/feasibility/SUMMARY.md`. The main results were also reproduced independently.
+- **E1.** XGBoost AUROC is 0.965–1.000 on every dataset. On Edge-IIoTset a single feature
+  (`mqtt.conack.flags`) separates all 14 attack families with AUROC 1.0, so it is excluded as a
+  main benchmark and used only as a shortcut example.
+- **E2.** Recall at FPR 1e-3 collapses when a family is unseen in training, even though AUROC on
+  that family stays at 0.84–0.99. Examples:
+  - CIC-IDS2017 Bot: 0.94 → 0.00; BruteForce: 1.00 → 0.002; DoS: 0.99 → 0.05.
+  - CSE-CIC-IDS2018 DoS: 1.00 → 0.01.
+  - CICIoT2023 Spoofing: 0.74 → 0.06.
+
+  Benign-only IsolationForest has recall ≈ 0 at 1e-3. Naive Bonferroni fusion is worse than
+  XGBoost alone. Conformal + BH holds FDR ≤ α in-domain.
+- **E3.** CIC-IDS2017 ↔ CSE-CIC-IDS2018 (68 shared CICFlowMeter features):
+  - AUROC is 0.75 (2017 → 2018) and 0.56 (2018 → 2017).
+  - Thresholds calibrated on A for 1% FPR give 10.9% FPR on B.
+  - Conformal + BH at α = 0.1 gives FDR 0.51 on B.
+  - Weighted conformal does not restore the guarantee: the oracle and label-free variants both
+    fail.
+- **Method gaps this leaves:**
+  - (i) a fusion score that keeps known-attack recall while detecting novel families at strict
+    FPR;
+  - (ii) shift-robust calibration that works when the target network contains attacks and
+    density-ratio weights are poor, e.g. a small labelled benign target calibration set,
+    or online / adaptive conformal on target traffic.
+- **Data gaps:**
+  - NetFlow v3 (NF-UNSW-NB15-v3, NF-CICIDS2018-v3) needs the official UQ download.
+  - CSE-CIC-IDS2018 and CICIoMT2024 were only partly downloaded.
+  - CICIoT2023 and CICIoMT2024 share no feature names.
+
 *Targets.* IEEE TIFS / TDSC, Computers & Security.
 
 ### Side project: leakage-free re-evaluation of imbalance-aware pipelines (short reproducibility paper)
