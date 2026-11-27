@@ -1,0 +1,19 @@
+dataset,seed,generator,group,fingerprint_auroc,top_features,pair,matched_budget,cross_auroc
+cicids2017,0,G1,timing,0.9940015649999999,,,,
+cicids2017,0,G1,length,0.97719318,,,,
+cicids2017,0,G1,count,0.9996880349999999,,,,
+cicids2017,0,G1,all,0.98408481,"Down/Up Ratio, Fwd Packet Length Min, Fwd IAT Mean, Fwd IAT Total, Fwd IAT Min",,,
+cicids2017,0,G2,timing,0.968887065,,,,
+cicids2017,0,G2,length,0.965847825,,,,
+cicids2017,0,G2,count,0.99978615,,,,
+cicids2017,0,G2,all,0.9776000100000001,"Down/Up Ratio, Active Max, Active Min, Idle Max, Fwd IAT Mean",,,
+cicids2018,0,G1,timing,0.9946228850000001,,,,
+cicids2018,0,G1,length,0.982231855,,,,
+cicids2018,0,G1,count,0.99991878,,,,
+cicids2018,0,G1,all,0.990422895,"Bwd Pkt Len Min, Subflow Fwd Byts, Pkt Len Max, Down/Up Ratio, Subflow Fwd Pkts",,,
+cicids2018,0,G2,timing,0.98604845,,,,
+cicids2018,0,G2,length,0.9774535550000001,,,,
+cicids2018,0,G2,count,0.99991555,,,,
+cicids2018,0,G2,all,0.988515545,"Active Max, Active Min, Down/Up Ratio, Pkt Len Mean, Subflow Fwd Pkts",,,
+cicids2017,0,,,,,G1 vs G2,True,0.990332625
+cicids2018,0,,,,,G1 vs G2,True,0.99248512

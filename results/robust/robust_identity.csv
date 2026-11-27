@@ -1,0 +1,841 @@
+dataset,seed,sample,rule,rows,holds
+cicids2017,0,original,flow iat mean,5000,1.0
+cicids2017,0,original,fwd iat mean,3794,1.0
+cicids2017,0,original,down/up ratio,5000,1.0
+cicids2017,0,original,packet length variance,5000,1.0
+cicids2017,0,original,packet length variance (pooled),1,0.2172
+cicids2017,0,original,packet length mean,5000,0.2048
+cicids2017,0,original,flow iat min = fwd iat min,4995,0.4168168168168168
+cicids2017,0,original,max packet length,5000,1.0
+cicids2017,0,original,min packet length,5000,0.9584
+cicids2017,0,original,flow packets/s,5000,1.0
+cicids2017,0,original,fwd packets/s,5000,1.0
+cicids2017,0,original,bwd packets/s,5000,1.0
+cicids2017,0,original,average packet size,5000,0.3982
+cicids2017,0,original,flow bytes/s,5000,1.0
+cicids2017,0,G1 all groups x5,flow iat mean,5000,1.0
+cicids2017,0,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2017,0,G1 all groups x5,down/up ratio,5000,1.0
+cicids2017,0,G1 all groups x5,packet length variance,5000,0.9996
+cicids2017,0,G1 all groups x5,packet length variance (pooled),1,0.3758
+cicids2017,0,G1 all groups x5,packet length mean,5000,0.265
+cicids2017,0,G1 all groups x5,flow iat min = fwd iat min,4995,0.4168168168168168
+cicids2017,0,G1 all groups x5,max packet length,5000,1.0
+cicids2017,0,G1 all groups x5,min packet length,5000,1.0
+cicids2017,0,G1 all groups x5,flow packets/s,5000,1.0
+cicids2017,0,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2017,0,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2017,0,G1 all groups x5,average packet size,5000,0.402
+cicids2017,0,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2017,0,G2 all groups x5,flow iat mean,5000,1.0
+cicids2017,0,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2017,0,G2 all groups x5,down/up ratio,5000,1.0
+cicids2017,0,G2 all groups x5,packet length variance,5000,0.9996
+cicids2017,0,G2 all groups x5,packet length variance (pooled),1,0.2702
+cicids2017,0,G2 all groups x5,packet length mean,5000,0.1928
+cicids2017,0,G2 all groups x5,flow iat min = fwd iat min,4995,0.4168168168168168
+cicids2017,0,G2 all groups x5,max packet length,5000,1.0
+cicids2017,0,G2 all groups x5,min packet length,5000,1.0
+cicids2017,0,G2 all groups x5,flow packets/s,5000,1.0
+cicids2017,0,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2017,0,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2017,0,G2 all groups x5,average packet size,5000,0.3978
+cicids2017,0,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2017,1,original,flow iat mean,5000,1.0
+cicids2017,1,original,fwd iat mean,3784,1.0
+cicids2017,1,original,down/up ratio,5000,1.0
+cicids2017,1,original,packet length variance,5000,1.0
+cicids2017,1,original,packet length variance (pooled),1,0.2188
+cicids2017,1,original,packet length mean,5000,0.2078
+cicids2017,1,original,flow iat min = fwd iat min,4997,0.4156493896337803
+cicids2017,1,original,max packet length,5000,1.0
+cicids2017,1,original,min packet length,5000,0.9614
+cicids2017,1,original,flow packets/s,4999,1.0
+cicids2017,1,original,fwd packets/s,4999,1.0
+cicids2017,1,original,bwd packets/s,4999,1.0
+cicids2017,1,original,average packet size,5000,0.4038
+cicids2017,1,original,flow bytes/s,4999,1.0
+cicids2017,1,G1 all groups x5,flow iat mean,5000,1.0
+cicids2017,1,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2017,1,G1 all groups x5,down/up ratio,5000,1.0
+cicids2017,1,G1 all groups x5,packet length variance,5000,0.9998
+cicids2017,1,G1 all groups x5,packet length variance (pooled),1,0.3868
+cicids2017,1,G1 all groups x5,packet length mean,5000,0.2726
+cicids2017,1,G1 all groups x5,flow iat min = fwd iat min,4997,0.4156493896337803
+cicids2017,1,G1 all groups x5,max packet length,5000,1.0
+cicids2017,1,G1 all groups x5,min packet length,5000,1.0
+cicids2017,1,G1 all groups x5,flow packets/s,4999,1.0
+cicids2017,1,G1 all groups x5,fwd packets/s,4999,1.0
+cicids2017,1,G1 all groups x5,bwd packets/s,4999,1.0
+cicids2017,1,G1 all groups x5,average packet size,5000,0.4064
+cicids2017,1,G1 all groups x5,flow bytes/s,4999,1.0
+cicids2017,1,G2 all groups x5,flow iat mean,5000,1.0
+cicids2017,1,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2017,1,G2 all groups x5,down/up ratio,5000,1.0
+cicids2017,1,G2 all groups x5,packet length variance,5000,0.9998
+cicids2017,1,G2 all groups x5,packet length variance (pooled),1,0.2714
+cicids2017,1,G2 all groups x5,packet length mean,5000,0.1954
+cicids2017,1,G2 all groups x5,flow iat min = fwd iat min,4997,0.4156493896337803
+cicids2017,1,G2 all groups x5,max packet length,5000,1.0
+cicids2017,1,G2 all groups x5,min packet length,5000,1.0
+cicids2017,1,G2 all groups x5,flow packets/s,4999,1.0
+cicids2017,1,G2 all groups x5,fwd packets/s,4999,1.0
+cicids2017,1,G2 all groups x5,bwd packets/s,4999,1.0
+cicids2017,1,G2 all groups x5,average packet size,5000,0.4028
+cicids2017,1,G2 all groups x5,flow bytes/s,4999,1.0
+cicids2017,2,original,flow iat mean,5000,1.0
+cicids2017,2,original,fwd iat mean,3808,1.0
+cicids2017,2,original,down/up ratio,5000,1.0
+cicids2017,2,original,packet length variance,5000,1.0
+cicids2017,2,original,packet length variance (pooled),1,0.2194
+cicids2017,2,original,packet length mean,5000,0.2084
+cicids2017,2,original,flow iat min = fwd iat min,4997,0.4204522713628177
+cicids2017,2,original,max packet length,5000,1.0
+cicids2017,2,original,min packet length,5000,0.9596
+cicids2017,2,original,flow packets/s,5000,1.0
+cicids2017,2,original,fwd packets/s,5000,1.0
+cicids2017,2,original,bwd packets/s,5000,1.0
+cicids2017,2,original,average packet size,5000,0.3856
+cicids2017,2,original,flow bytes/s,5000,1.0
+cicids2017,2,G1 all groups x5,flow iat mean,5000,1.0
+cicids2017,2,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2017,2,G1 all groups x5,down/up ratio,5000,1.0
+cicids2017,2,G1 all groups x5,packet length variance,5000,0.9988
+cicids2017,2,G1 all groups x5,packet length variance (pooled),1,0.3882
+cicids2017,2,G1 all groups x5,packet length mean,5000,0.2708
+cicids2017,2,G1 all groups x5,flow iat min = fwd iat min,4997,0.4204522713628177
+cicids2017,2,G1 all groups x5,max packet length,5000,1.0
+cicids2017,2,G1 all groups x5,min packet length,5000,1.0
+cicids2017,2,G1 all groups x5,flow packets/s,5000,1.0
+cicids2017,2,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2017,2,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2017,2,G1 all groups x5,average packet size,5000,0.3882
+cicids2017,2,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2017,2,G2 all groups x5,flow iat mean,5000,1.0
+cicids2017,2,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2017,2,G2 all groups x5,down/up ratio,5000,1.0
+cicids2017,2,G2 all groups x5,packet length variance,5000,0.999
+cicids2017,2,G2 all groups x5,packet length variance (pooled),1,0.2798
+cicids2017,2,G2 all groups x5,packet length mean,5000,0.1968
+cicids2017,2,G2 all groups x5,flow iat min = fwd iat min,4997,0.4204522713628177
+cicids2017,2,G2 all groups x5,max packet length,5000,1.0
+cicids2017,2,G2 all groups x5,min packet length,5000,1.0
+cicids2017,2,G2 all groups x5,flow packets/s,5000,1.0
+cicids2017,2,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2017,2,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2017,2,G2 all groups x5,average packet size,5000,0.3852
+cicids2017,2,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2017,3,original,flow iat mean,5000,1.0
+cicids2017,3,original,fwd iat mean,3776,1.0
+cicids2017,3,original,down/up ratio,5000,1.0
+cicids2017,3,original,packet length variance,5000,1.0
+cicids2017,3,original,packet length variance (pooled),1,0.2166
+cicids2017,3,original,packet length mean,5000,0.2036
+cicids2017,3,original,flow iat min = fwd iat min,4996,0.4167333867093675
+cicids2017,3,original,max packet length,5000,1.0
+cicids2017,3,original,min packet length,5000,0.9602
+cicids2017,3,original,flow packets/s,4999,1.0
+cicids2017,3,original,fwd packets/s,4999,1.0
+cicids2017,3,original,bwd packets/s,4999,1.0
+cicids2017,3,original,average packet size,5000,0.3884
+cicids2017,3,original,flow bytes/s,4999,1.0
+cicids2017,3,G1 all groups x5,flow iat mean,5000,1.0
+cicids2017,3,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2017,3,G1 all groups x5,down/up ratio,5000,1.0
+cicids2017,3,G1 all groups x5,packet length variance,5000,0.999
+cicids2017,3,G1 all groups x5,packet length variance (pooled),1,0.3824
+cicids2017,3,G1 all groups x5,packet length mean,5000,0.2648
+cicids2017,3,G1 all groups x5,flow iat min = fwd iat min,4996,0.4167333867093675
+cicids2017,3,G1 all groups x5,max packet length,5000,1.0
+cicids2017,3,G1 all groups x5,min packet length,5000,1.0
+cicids2017,3,G1 all groups x5,flow packets/s,4999,1.0
+cicids2017,3,G1 all groups x5,fwd packets/s,4999,1.0
+cicids2017,3,G1 all groups x5,bwd packets/s,4999,1.0
+cicids2017,3,G1 all groups x5,average packet size,5000,0.393
+cicids2017,3,G1 all groups x5,flow bytes/s,4999,1.0
+cicids2017,3,G2 all groups x5,flow iat mean,5000,1.0
+cicids2017,3,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2017,3,G2 all groups x5,down/up ratio,5000,1.0
+cicids2017,3,G2 all groups x5,packet length variance,5000,0.9998
+cicids2017,3,G2 all groups x5,packet length variance (pooled),1,0.2734
+cicids2017,3,G2 all groups x5,packet length mean,5000,0.194
+cicids2017,3,G2 all groups x5,flow iat min = fwd iat min,4996,0.4167333867093675
+cicids2017,3,G2 all groups x5,max packet length,5000,1.0
+cicids2017,3,G2 all groups x5,min packet length,5000,1.0
+cicids2017,3,G2 all groups x5,flow packets/s,4999,1.0
+cicids2017,3,G2 all groups x5,fwd packets/s,4999,1.0
+cicids2017,3,G2 all groups x5,bwd packets/s,4999,1.0
+cicids2017,3,G2 all groups x5,average packet size,5000,0.3882
+cicids2017,3,G2 all groups x5,flow bytes/s,4999,1.0
+cicids2017,4,original,flow iat mean,5000,1.0
+cicids2017,4,original,fwd iat mean,3844,1.0
+cicids2017,4,original,down/up ratio,5000,1.0
+cicids2017,4,original,packet length variance,5000,1.0
+cicids2017,4,original,packet length variance (pooled),1,0.2242
+cicids2017,4,original,packet length mean,5000,0.2096
+cicids2017,4,original,flow iat min = fwd iat min,4985,0.4282848545636911
+cicids2017,4,original,max packet length,5000,1.0
+cicids2017,4,original,min packet length,5000,0.9566
+cicids2017,4,original,flow packets/s,4999,1.0
+cicids2017,4,original,fwd packets/s,4999,1.0
+cicids2017,4,original,bwd packets/s,4999,1.0
+cicids2017,4,original,average packet size,5000,0.3908
+cicids2017,4,original,flow bytes/s,4999,1.0
+cicids2017,4,G1 all groups x5,flow iat mean,5000,1.0
+cicids2017,4,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2017,4,G1 all groups x5,down/up ratio,5000,1.0
+cicids2017,4,G1 all groups x5,packet length variance,5000,0.9992
+cicids2017,4,G1 all groups x5,packet length variance (pooled),1,0.3852
+cicids2017,4,G1 all groups x5,packet length mean,5000,0.269
+cicids2017,4,G1 all groups x5,flow iat min = fwd iat min,4985,0.4282848545636911
+cicids2017,4,G1 all groups x5,max packet length,5000,1.0
+cicids2017,4,G1 all groups x5,min packet length,5000,1.0
+cicids2017,4,G1 all groups x5,flow packets/s,4999,1.0
+cicids2017,4,G1 all groups x5,fwd packets/s,4999,1.0
+cicids2017,4,G1 all groups x5,bwd packets/s,4999,1.0
+cicids2017,4,G1 all groups x5,average packet size,5000,0.3934
+cicids2017,4,G1 all groups x5,flow bytes/s,4999,1.0
+cicids2017,4,G2 all groups x5,flow iat mean,5000,1.0
+cicids2017,4,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2017,4,G2 all groups x5,down/up ratio,5000,1.0
+cicids2017,4,G2 all groups x5,packet length variance,5000,0.9984
+cicids2017,4,G2 all groups x5,packet length variance (pooled),1,0.2722
+cicids2017,4,G2 all groups x5,packet length mean,5000,0.1982
+cicids2017,4,G2 all groups x5,flow iat min = fwd iat min,4985,0.4282848545636911
+cicids2017,4,G2 all groups x5,max packet length,5000,1.0
+cicids2017,4,G2 all groups x5,min packet length,5000,1.0
+cicids2017,4,G2 all groups x5,flow packets/s,4999,1.0
+cicids2017,4,G2 all groups x5,fwd packets/s,4999,1.0
+cicids2017,4,G2 all groups x5,bwd packets/s,4999,1.0
+cicids2017,4,G2 all groups x5,average packet size,5000,0.3904
+cicids2017,4,G2 all groups x5,flow bytes/s,4999,1.0
+cicids2017,5,original,flow iat mean,5000,1.0
+cicids2017,5,original,fwd iat mean,3809,1.0
+cicids2017,5,original,down/up ratio,5000,1.0
+cicids2017,5,original,packet length variance,5000,1.0
+cicids2017,5,original,packet length variance (pooled),1,0.2076
+cicids2017,5,original,packet length mean,5000,0.1956
+cicids2017,5,original,flow iat min = fwd iat min,4988,0.41599839615076184
+cicids2017,5,original,max packet length,5000,1.0
+cicids2017,5,original,min packet length,5000,0.9628
+cicids2017,5,original,flow packets/s,4999,1.0
+cicids2017,5,original,fwd packets/s,4999,1.0
+cicids2017,5,original,bwd packets/s,4999,1.0
+cicids2017,5,original,average packet size,5000,0.3834
+cicids2017,5,original,flow bytes/s,4999,1.0
+cicids2017,5,G1 all groups x5,flow iat mean,5000,1.0
+cicids2017,5,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2017,5,G1 all groups x5,down/up ratio,5000,1.0
+cicids2017,5,G1 all groups x5,packet length variance,5000,0.9998
+cicids2017,5,G1 all groups x5,packet length variance (pooled),1,0.3692
+cicids2017,5,G1 all groups x5,packet length mean,5000,0.255
+cicids2017,5,G1 all groups x5,flow iat min = fwd iat min,4988,0.41599839615076184
+cicids2017,5,G1 all groups x5,max packet length,5000,1.0
+cicids2017,5,G1 all groups x5,min packet length,5000,1.0
+cicids2017,5,G1 all groups x5,flow packets/s,4999,1.0
+cicids2017,5,G1 all groups x5,fwd packets/s,4999,1.0
+cicids2017,5,G1 all groups x5,bwd packets/s,4999,1.0
+cicids2017,5,G1 all groups x5,average packet size,5000,0.385
+cicids2017,5,G1 all groups x5,flow bytes/s,4999,1.0
+cicids2017,5,G2 all groups x5,flow iat mean,5000,1.0
+cicids2017,5,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2017,5,G2 all groups x5,down/up ratio,5000,1.0
+cicids2017,5,G2 all groups x5,packet length variance,5000,0.9986
+cicids2017,5,G2 all groups x5,packet length variance (pooled),1,0.2588
+cicids2017,5,G2 all groups x5,packet length mean,5000,0.1846
+cicids2017,5,G2 all groups x5,flow iat min = fwd iat min,4988,0.41599839615076184
+cicids2017,5,G2 all groups x5,max packet length,5000,1.0
+cicids2017,5,G2 all groups x5,min packet length,5000,1.0
+cicids2017,5,G2 all groups x5,flow packets/s,4999,1.0
+cicids2017,5,G2 all groups x5,fwd packets/s,4999,1.0
+cicids2017,5,G2 all groups x5,bwd packets/s,4999,1.0
+cicids2017,5,G2 all groups x5,average packet size,5000,0.3832
+cicids2017,5,G2 all groups x5,flow bytes/s,4999,1.0
+cicids2017,6,original,flow iat mean,5000,1.0
+cicids2017,6,original,fwd iat mean,3903,1.0
+cicids2017,6,original,down/up ratio,5000,1.0
+cicids2017,6,original,packet length variance,5000,1.0
+cicids2017,6,original,packet length variance (pooled),1,0.2064
+cicids2017,6,original,packet length mean,5000,0.1918
+cicids2017,6,original,flow iat min = fwd iat min,4994,0.4301161393672407
+cicids2017,6,original,max packet length,5000,1.0
+cicids2017,6,original,min packet length,5000,0.9618
+cicids2017,6,original,flow packets/s,4999,1.0
+cicids2017,6,original,fwd packets/s,4999,1.0
+cicids2017,6,original,bwd packets/s,4999,1.0
+cicids2017,6,original,average packet size,5000,0.3898
+cicids2017,6,original,flow bytes/s,4999,1.0
+cicids2017,6,G1 all groups x5,flow iat mean,5000,1.0
+cicids2017,6,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2017,6,G1 all groups x5,down/up ratio,5000,1.0
+cicids2017,6,G1 all groups x5,packet length variance,5000,1.0
+cicids2017,6,G1 all groups x5,packet length variance (pooled),1,0.3668
+cicids2017,6,G1 all groups x5,packet length mean,5000,0.2526
+cicids2017,6,G1 all groups x5,flow iat min = fwd iat min,4994,0.4301161393672407
+cicids2017,6,G1 all groups x5,max packet length,5000,1.0
+cicids2017,6,G1 all groups x5,min packet length,5000,1.0
+cicids2017,6,G1 all groups x5,flow packets/s,4999,1.0
+cicids2017,6,G1 all groups x5,fwd packets/s,4999,1.0
+cicids2017,6,G1 all groups x5,bwd packets/s,4999,1.0
+cicids2017,6,G1 all groups x5,average packet size,5000,0.3948
+cicids2017,6,G1 all groups x5,flow bytes/s,4999,1.0
+cicids2017,6,G2 all groups x5,flow iat mean,5000,1.0
+cicids2017,6,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2017,6,G2 all groups x5,down/up ratio,5000,1.0
+cicids2017,6,G2 all groups x5,packet length variance,5000,0.9992
+cicids2017,6,G2 all groups x5,packet length variance (pooled),1,0.2558
+cicids2017,6,G2 all groups x5,packet length mean,5000,0.1812
+cicids2017,6,G2 all groups x5,flow iat min = fwd iat min,4994,0.4301161393672407
+cicids2017,6,G2 all groups x5,max packet length,5000,1.0
+cicids2017,6,G2 all groups x5,min packet length,5000,1.0
+cicids2017,6,G2 all groups x5,flow packets/s,4999,1.0
+cicids2017,6,G2 all groups x5,fwd packets/s,4999,1.0
+cicids2017,6,G2 all groups x5,bwd packets/s,4999,1.0
+cicids2017,6,G2 all groups x5,average packet size,5000,0.3894
+cicids2017,6,G2 all groups x5,flow bytes/s,4999,1.0
+cicids2017,7,original,flow iat mean,5000,1.0
+cicids2017,7,original,fwd iat mean,3821,1.0
+cicids2017,7,original,down/up ratio,5000,1.0
+cicids2017,7,original,packet length variance,5000,1.0
+cicids2017,7,original,packet length variance (pooled),1,0.2156
+cicids2017,7,original,packet length mean,5000,0.2002
+cicids2017,7,original,flow iat min = fwd iat min,4991,0.42316169104387896
+cicids2017,7,original,max packet length,5000,1.0
+cicids2017,7,original,min packet length,5000,0.9648
+cicids2017,7,original,flow packets/s,4999,1.0
+cicids2017,7,original,fwd packets/s,4999,1.0
+cicids2017,7,original,bwd packets/s,4999,1.0
+cicids2017,7,original,average packet size,5000,0.4116
+cicids2017,7,original,flow bytes/s,4999,1.0
+cicids2017,7,G1 all groups x5,flow iat mean,5000,1.0
+cicids2017,7,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2017,7,G1 all groups x5,down/up ratio,5000,1.0
+cicids2017,7,G1 all groups x5,packet length variance,5000,0.9996
+cicids2017,7,G1 all groups x5,packet length variance (pooled),1,0.3722
+cicids2017,7,G1 all groups x5,packet length mean,5000,0.2622
+cicids2017,7,G1 all groups x5,flow iat min = fwd iat min,4991,0.42316169104387896
+cicids2017,7,G1 all groups x5,max packet length,5000,1.0
+cicids2017,7,G1 all groups x5,min packet length,5000,1.0
+cicids2017,7,G1 all groups x5,flow packets/s,4999,1.0
+cicids2017,7,G1 all groups x5,fwd packets/s,4999,1.0
+cicids2017,7,G1 all groups x5,bwd packets/s,4999,1.0
+cicids2017,7,G1 all groups x5,average packet size,5000,0.4148
+cicids2017,7,G1 all groups x5,flow bytes/s,4999,1.0
+cicids2017,7,G2 all groups x5,flow iat mean,5000,1.0
+cicids2017,7,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2017,7,G2 all groups x5,down/up ratio,5000,1.0
+cicids2017,7,G2 all groups x5,packet length variance,5000,0.9996
+cicids2017,7,G2 all groups x5,packet length variance (pooled),1,0.2612
+cicids2017,7,G2 all groups x5,packet length mean,5000,0.1918
+cicids2017,7,G2 all groups x5,flow iat min = fwd iat min,4991,0.42316169104387896
+cicids2017,7,G2 all groups x5,max packet length,5000,1.0
+cicids2017,7,G2 all groups x5,min packet length,5000,1.0
+cicids2017,7,G2 all groups x5,flow packets/s,4999,1.0
+cicids2017,7,G2 all groups x5,fwd packets/s,4999,1.0
+cicids2017,7,G2 all groups x5,bwd packets/s,4999,1.0
+cicids2017,7,G2 all groups x5,average packet size,5000,0.4108
+cicids2017,7,G2 all groups x5,flow bytes/s,4999,1.0
+cicids2017,8,original,flow iat mean,5000,1.0
+cicids2017,8,original,fwd iat mean,3819,1.0
+cicids2017,8,original,down/up ratio,5000,1.0
+cicids2017,8,original,packet length variance,5000,1.0
+cicids2017,8,original,packet length variance (pooled),1,0.226
+cicids2017,8,original,packet length mean,5000,0.2122
+cicids2017,8,original,flow iat min = fwd iat min,4994,0.4187024429315178
+cicids2017,8,original,max packet length,5000,1.0
+cicids2017,8,original,min packet length,5000,0.964
+cicids2017,8,original,flow packets/s,5000,1.0
+cicids2017,8,original,fwd packets/s,5000,1.0
+cicids2017,8,original,bwd packets/s,5000,1.0
+cicids2017,8,original,average packet size,5000,0.3954
+cicids2017,8,original,flow bytes/s,5000,1.0
+cicids2017,8,G1 all groups x5,flow iat mean,5000,1.0
+cicids2017,8,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2017,8,G1 all groups x5,down/up ratio,5000,1.0
+cicids2017,8,G1 all groups x5,packet length variance,5000,0.9988
+cicids2017,8,G1 all groups x5,packet length variance (pooled),1,0.3826
+cicids2017,8,G1 all groups x5,packet length mean,5000,0.2732
+cicids2017,8,G1 all groups x5,flow iat min = fwd iat min,4994,0.4187024429315178
+cicids2017,8,G1 all groups x5,max packet length,5000,1.0
+cicids2017,8,G1 all groups x5,min packet length,5000,1.0
+cicids2017,8,G1 all groups x5,flow packets/s,5000,1.0
+cicids2017,8,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2017,8,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2017,8,G1 all groups x5,average packet size,5000,0.3994
+cicids2017,8,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2017,8,G2 all groups x5,flow iat mean,5000,1.0
+cicids2017,8,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2017,8,G2 all groups x5,down/up ratio,5000,1.0
+cicids2017,8,G2 all groups x5,packet length variance,5000,0.9994
+cicids2017,8,G2 all groups x5,packet length variance (pooled),1,0.2728
+cicids2017,8,G2 all groups x5,packet length mean,5000,0.201
+cicids2017,8,G2 all groups x5,flow iat min = fwd iat min,4994,0.4187024429315178
+cicids2017,8,G2 all groups x5,max packet length,5000,1.0
+cicids2017,8,G2 all groups x5,min packet length,5000,1.0
+cicids2017,8,G2 all groups x5,flow packets/s,5000,1.0
+cicids2017,8,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2017,8,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2017,8,G2 all groups x5,average packet size,5000,0.395
+cicids2017,8,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2017,9,original,flow iat mean,5000,1.0
+cicids2017,9,original,fwd iat mean,3860,1.0
+cicids2017,9,original,down/up ratio,5000,1.0
+cicids2017,9,original,packet length variance,5000,1.0
+cicids2017,9,original,packet length variance (pooled),1,0.2236
+cicids2017,9,original,packet length mean,5000,0.2062
+cicids2017,9,original,flow iat min = fwd iat min,4994,0.42731277533039647
+cicids2017,9,original,max packet length,5000,1.0
+cicids2017,9,original,min packet length,5000,0.961
+cicids2017,9,original,flow packets/s,5000,1.0
+cicids2017,9,original,fwd packets/s,5000,1.0
+cicids2017,9,original,bwd packets/s,5000,1.0
+cicids2017,9,original,average packet size,5000,0.3866
+cicids2017,9,original,flow bytes/s,5000,1.0
+cicids2017,9,G1 all groups x5,flow iat mean,5000,1.0
+cicids2017,9,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2017,9,G1 all groups x5,down/up ratio,5000,1.0
+cicids2017,9,G1 all groups x5,packet length variance,5000,0.999
+cicids2017,9,G1 all groups x5,packet length variance (pooled),1,0.3878
+cicids2017,9,G1 all groups x5,packet length mean,5000,0.2712
+cicids2017,9,G1 all groups x5,flow iat min = fwd iat min,4994,0.42731277533039647
+cicids2017,9,G1 all groups x5,max packet length,5000,1.0
+cicids2017,9,G1 all groups x5,min packet length,5000,1.0
+cicids2017,9,G1 all groups x5,flow packets/s,5000,1.0
+cicids2017,9,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2017,9,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2017,9,G1 all groups x5,average packet size,5000,0.3902
+cicids2017,9,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2017,9,G2 all groups x5,flow iat mean,5000,1.0
+cicids2017,9,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2017,9,G2 all groups x5,down/up ratio,5000,1.0
+cicids2017,9,G2 all groups x5,packet length variance,5000,0.9996
+cicids2017,9,G2 all groups x5,packet length variance (pooled),1,0.2772
+cicids2017,9,G2 all groups x5,packet length mean,5000,0.1978
+cicids2017,9,G2 all groups x5,flow iat min = fwd iat min,4994,0.42731277533039647
+cicids2017,9,G2 all groups x5,max packet length,5000,1.0
+cicids2017,9,G2 all groups x5,min packet length,5000,1.0
+cicids2017,9,G2 all groups x5,flow packets/s,5000,1.0
+cicids2017,9,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2017,9,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2017,9,G2 all groups x5,average packet size,5000,0.3862
+cicids2017,9,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2018,0,original,flow iat mean,5000,1.0
+cicids2018,0,original,fwd iat mean,4143,1.0
+cicids2018,0,original,down/up ratio,5000,1.0
+cicids2018,0,original,packet length variance,5000,1.0
+cicids2018,0,original,packet length variance (pooled),1,0.1752
+cicids2018,0,original,packet length mean,5000,0.167
+cicids2018,0,original,flow iat min = fwd iat min,5000,0.3494
+cicids2018,0,original,max packet length,5000,1.0
+cicids2018,0,original,min packet length,5000,0.9888
+cicids2018,0,original,flow packets/s,5000,1.0
+cicids2018,0,original,fwd packets/s,5000,1.0
+cicids2018,0,original,bwd packets/s,5000,1.0
+cicids2018,0,original,average packet size,5000,0.7538
+cicids2018,0,original,flow bytes/s,5000,1.0
+cicids2018,0,G1 all groups x5,flow iat mean,5000,1.0
+cicids2018,0,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2018,0,G1 all groups x5,down/up ratio,5000,1.0
+cicids2018,0,G1 all groups x5,packet length variance,5000,1.0
+cicids2018,0,G1 all groups x5,packet length variance (pooled),1,0.2726
+cicids2018,0,G1 all groups x5,packet length mean,5000,0.1928
+cicids2018,0,G1 all groups x5,flow iat min = fwd iat min,5000,0.3494
+cicids2018,0,G1 all groups x5,max packet length,5000,1.0
+cicids2018,0,G1 all groups x5,min packet length,5000,1.0
+cicids2018,0,G1 all groups x5,flow packets/s,5000,1.0
+cicids2018,0,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2018,0,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2018,0,G1 all groups x5,average packet size,5000,0.7546
+cicids2018,0,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2018,0,G2 all groups x5,flow iat mean,5000,0.9998
+cicids2018,0,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2018,0,G2 all groups x5,down/up ratio,5000,1.0
+cicids2018,0,G2 all groups x5,packet length variance,5000,1.0
+cicids2018,0,G2 all groups x5,packet length variance (pooled),1,0.1934
+cicids2018,0,G2 all groups x5,packet length mean,5000,0.1632
+cicids2018,0,G2 all groups x5,flow iat min = fwd iat min,5000,0.3494
+cicids2018,0,G2 all groups x5,max packet length,5000,1.0
+cicids2018,0,G2 all groups x5,min packet length,5000,1.0
+cicids2018,0,G2 all groups x5,flow packets/s,5000,1.0
+cicids2018,0,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2018,0,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2018,0,G2 all groups x5,average packet size,5000,0.7534
+cicids2018,0,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2018,1,original,flow iat mean,5000,1.0
+cicids2018,1,original,fwd iat mean,4154,1.0
+cicids2018,1,original,down/up ratio,5000,1.0
+cicids2018,1,original,packet length variance,5000,1.0
+cicids2018,1,original,packet length variance (pooled),1,0.1744
+cicids2018,1,original,packet length mean,5000,0.1668
+cicids2018,1,original,flow iat min = fwd iat min,5000,0.3494
+cicids2018,1,original,max packet length,5000,1.0
+cicids2018,1,original,min packet length,5000,0.9888
+cicids2018,1,original,flow packets/s,5000,1.0
+cicids2018,1,original,fwd packets/s,5000,1.0
+cicids2018,1,original,bwd packets/s,5000,1.0
+cicids2018,1,original,average packet size,5000,0.7556
+cicids2018,1,original,flow bytes/s,5000,1.0
+cicids2018,1,G1 all groups x5,flow iat mean,5000,1.0
+cicids2018,1,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2018,1,G1 all groups x5,down/up ratio,5000,1.0
+cicids2018,1,G1 all groups x5,packet length variance,5000,1.0
+cicids2018,1,G1 all groups x5,packet length variance (pooled),1,0.2758
+cicids2018,1,G1 all groups x5,packet length mean,5000,0.194
+cicids2018,1,G1 all groups x5,flow iat min = fwd iat min,5000,0.3494
+cicids2018,1,G1 all groups x5,max packet length,5000,1.0
+cicids2018,1,G1 all groups x5,min packet length,5000,1.0
+cicids2018,1,G1 all groups x5,flow packets/s,5000,1.0
+cicids2018,1,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2018,1,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2018,1,G1 all groups x5,average packet size,5000,0.7564
+cicids2018,1,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2018,1,G2 all groups x5,flow iat mean,5000,1.0
+cicids2018,1,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2018,1,G2 all groups x5,down/up ratio,5000,1.0
+cicids2018,1,G2 all groups x5,packet length variance,5000,1.0
+cicids2018,1,G2 all groups x5,packet length variance (pooled),1,0.1938
+cicids2018,1,G2 all groups x5,packet length mean,5000,0.1624
+cicids2018,1,G2 all groups x5,flow iat min = fwd iat min,5000,0.3494
+cicids2018,1,G2 all groups x5,max packet length,5000,1.0
+cicids2018,1,G2 all groups x5,min packet length,5000,1.0
+cicids2018,1,G2 all groups x5,flow packets/s,5000,1.0
+cicids2018,1,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2018,1,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2018,1,G2 all groups x5,average packet size,5000,0.7556
+cicids2018,1,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2018,2,original,flow iat mean,5000,1.0
+cicids2018,2,original,fwd iat mean,4178,1.0
+cicids2018,2,original,down/up ratio,5000,1.0
+cicids2018,2,original,packet length variance,5000,1.0
+cicids2018,2,original,packet length variance (pooled),1,0.1706
+cicids2018,2,original,packet length mean,5000,0.1624
+cicids2018,2,original,flow iat min = fwd iat min,5000,0.3546
+cicids2018,2,original,max packet length,5000,1.0
+cicids2018,2,original,min packet length,5000,0.989
+cicids2018,2,original,flow packets/s,5000,1.0
+cicids2018,2,original,fwd packets/s,5000,1.0
+cicids2018,2,original,bwd packets/s,5000,1.0
+cicids2018,2,original,average packet size,5000,0.7582
+cicids2018,2,original,flow bytes/s,5000,1.0
+cicids2018,2,G1 all groups x5,flow iat mean,5000,1.0
+cicids2018,2,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2018,2,G1 all groups x5,down/up ratio,5000,1.0
+cicids2018,2,G1 all groups x5,packet length variance,5000,1.0
+cicids2018,2,G1 all groups x5,packet length variance (pooled),1,0.273
+cicids2018,2,G1 all groups x5,packet length mean,5000,0.1858
+cicids2018,2,G1 all groups x5,flow iat min = fwd iat min,5000,0.3546
+cicids2018,2,G1 all groups x5,max packet length,5000,1.0
+cicids2018,2,G1 all groups x5,min packet length,5000,1.0
+cicids2018,2,G1 all groups x5,flow packets/s,5000,1.0
+cicids2018,2,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2018,2,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2018,2,G1 all groups x5,average packet size,5000,0.7588
+cicids2018,2,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2018,2,G2 all groups x5,flow iat mean,5000,1.0
+cicids2018,2,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2018,2,G2 all groups x5,down/up ratio,5000,1.0
+cicids2018,2,G2 all groups x5,packet length variance,5000,0.9998
+cicids2018,2,G2 all groups x5,packet length variance (pooled),1,0.184
+cicids2018,2,G2 all groups x5,packet length mean,5000,0.1552
+cicids2018,2,G2 all groups x5,flow iat min = fwd iat min,5000,0.3546
+cicids2018,2,G2 all groups x5,max packet length,5000,1.0
+cicids2018,2,G2 all groups x5,min packet length,5000,1.0
+cicids2018,2,G2 all groups x5,flow packets/s,5000,1.0
+cicids2018,2,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2018,2,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2018,2,G2 all groups x5,average packet size,5000,0.7576
+cicids2018,2,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2018,3,original,flow iat mean,5000,1.0
+cicids2018,3,original,fwd iat mean,4172,1.0
+cicids2018,3,original,down/up ratio,5000,1.0
+cicids2018,3,original,packet length variance,5000,1.0
+cicids2018,3,original,packet length variance (pooled),1,0.1758
+cicids2018,3,original,packet length mean,5000,0.168
+cicids2018,3,original,flow iat min = fwd iat min,5000,0.3552
+cicids2018,3,original,max packet length,5000,1.0
+cicids2018,3,original,min packet length,5000,0.987
+cicids2018,3,original,flow packets/s,5000,1.0
+cicids2018,3,original,fwd packets/s,5000,1.0
+cicids2018,3,original,bwd packets/s,5000,1.0
+cicids2018,3,original,average packet size,5000,0.767
+cicids2018,3,original,flow bytes/s,5000,1.0
+cicids2018,3,G1 all groups x5,flow iat mean,5000,1.0
+cicids2018,3,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2018,3,G1 all groups x5,down/up ratio,5000,1.0
+cicids2018,3,G1 all groups x5,packet length variance,5000,0.9998
+cicids2018,3,G1 all groups x5,packet length variance (pooled),1,0.2818
+cicids2018,3,G1 all groups x5,packet length mean,5000,0.1948
+cicids2018,3,G1 all groups x5,flow iat min = fwd iat min,5000,0.3552
+cicids2018,3,G1 all groups x5,max packet length,5000,1.0
+cicids2018,3,G1 all groups x5,min packet length,5000,1.0
+cicids2018,3,G1 all groups x5,flow packets/s,5000,1.0
+cicids2018,3,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2018,3,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2018,3,G1 all groups x5,average packet size,5000,0.7684
+cicids2018,3,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2018,3,G2 all groups x5,flow iat mean,5000,1.0
+cicids2018,3,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2018,3,G2 all groups x5,down/up ratio,5000,1.0
+cicids2018,3,G2 all groups x5,packet length variance,5000,0.9998
+cicids2018,3,G2 all groups x5,packet length variance (pooled),1,0.1914
+cicids2018,3,G2 all groups x5,packet length mean,5000,0.165
+cicids2018,3,G2 all groups x5,flow iat min = fwd iat min,5000,0.3552
+cicids2018,3,G2 all groups x5,max packet length,5000,1.0
+cicids2018,3,G2 all groups x5,min packet length,5000,1.0
+cicids2018,3,G2 all groups x5,flow packets/s,5000,1.0
+cicids2018,3,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2018,3,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2018,3,G2 all groups x5,average packet size,5000,0.7662
+cicids2018,3,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2018,4,original,flow iat mean,5000,1.0
+cicids2018,4,original,fwd iat mean,4198,1.0
+cicids2018,4,original,down/up ratio,5000,1.0
+cicids2018,4,original,packet length variance,5000,1.0
+cicids2018,4,original,packet length variance (pooled),1,0.164
+cicids2018,4,original,packet length mean,5000,0.1596
+cicids2018,4,original,flow iat min = fwd iat min,5000,0.363
+cicids2018,4,original,max packet length,5000,1.0
+cicids2018,4,original,min packet length,5000,0.9868
+cicids2018,4,original,flow packets/s,5000,1.0
+cicids2018,4,original,fwd packets/s,5000,1.0
+cicids2018,4,original,bwd packets/s,5000,1.0
+cicids2018,4,original,average packet size,5000,0.7604
+cicids2018,4,original,flow bytes/s,5000,1.0
+cicids2018,4,G1 all groups x5,flow iat mean,5000,1.0
+cicids2018,4,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2018,4,G1 all groups x5,down/up ratio,5000,1.0
+cicids2018,4,G1 all groups x5,packet length variance,5000,1.0
+cicids2018,4,G1 all groups x5,packet length variance (pooled),1,0.2702
+cicids2018,4,G1 all groups x5,packet length mean,5000,0.1842
+cicids2018,4,G1 all groups x5,flow iat min = fwd iat min,5000,0.363
+cicids2018,4,G1 all groups x5,max packet length,5000,1.0
+cicids2018,4,G1 all groups x5,min packet length,5000,1.0
+cicids2018,4,G1 all groups x5,flow packets/s,5000,1.0
+cicids2018,4,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2018,4,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2018,4,G1 all groups x5,average packet size,5000,0.7614
+cicids2018,4,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2018,4,G2 all groups x5,flow iat mean,5000,0.9998
+cicids2018,4,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2018,4,G2 all groups x5,down/up ratio,5000,1.0
+cicids2018,4,G2 all groups x5,packet length variance,5000,1.0
+cicids2018,4,G2 all groups x5,packet length variance (pooled),1,0.1776
+cicids2018,4,G2 all groups x5,packet length mean,5000,0.1548
+cicids2018,4,G2 all groups x5,flow iat min = fwd iat min,5000,0.363
+cicids2018,4,G2 all groups x5,max packet length,5000,1.0
+cicids2018,4,G2 all groups x5,min packet length,5000,1.0
+cicids2018,4,G2 all groups x5,flow packets/s,5000,1.0
+cicids2018,4,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2018,4,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2018,4,G2 all groups x5,average packet size,5000,0.7596
+cicids2018,4,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2018,5,original,flow iat mean,5000,1.0
+cicids2018,5,original,fwd iat mean,4147,1.0
+cicids2018,5,original,down/up ratio,5000,1.0
+cicids2018,5,original,packet length variance,5000,1.0
+cicids2018,5,original,packet length variance (pooled),1,0.1574
+cicids2018,5,original,packet length mean,5000,0.155
+cicids2018,5,original,flow iat min = fwd iat min,5000,0.3466
+cicids2018,5,original,max packet length,5000,1.0
+cicids2018,5,original,min packet length,5000,0.9906
+cicids2018,5,original,flow packets/s,5000,1.0
+cicids2018,5,original,fwd packets/s,5000,1.0
+cicids2018,5,original,bwd packets/s,5000,1.0
+cicids2018,5,original,average packet size,5000,0.7602
+cicids2018,5,original,flow bytes/s,5000,1.0
+cicids2018,5,G1 all groups x5,flow iat mean,5000,1.0
+cicids2018,5,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2018,5,G1 all groups x5,down/up ratio,5000,1.0
+cicids2018,5,G1 all groups x5,packet length variance,5000,1.0
+cicids2018,5,G1 all groups x5,packet length variance (pooled),1,0.2556
+cicids2018,5,G1 all groups x5,packet length mean,5000,0.1738
+cicids2018,5,G1 all groups x5,flow iat min = fwd iat min,5000,0.3466
+cicids2018,5,G1 all groups x5,max packet length,5000,1.0
+cicids2018,5,G1 all groups x5,min packet length,5000,1.0
+cicids2018,5,G1 all groups x5,flow packets/s,5000,1.0
+cicids2018,5,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2018,5,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2018,5,G1 all groups x5,average packet size,5000,0.7604
+cicids2018,5,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2018,5,G2 all groups x5,flow iat mean,5000,0.9998
+cicids2018,5,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2018,5,G2 all groups x5,down/up ratio,5000,1.0
+cicids2018,5,G2 all groups x5,packet length variance,5000,1.0
+cicids2018,5,G2 all groups x5,packet length variance (pooled),1,0.1746
+cicids2018,5,G2 all groups x5,packet length mean,5000,0.1492
+cicids2018,5,G2 all groups x5,flow iat min = fwd iat min,5000,0.3466
+cicids2018,5,G2 all groups x5,max packet length,5000,1.0
+cicids2018,5,G2 all groups x5,min packet length,5000,1.0
+cicids2018,5,G2 all groups x5,flow packets/s,5000,1.0
+cicids2018,5,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2018,5,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2018,5,G2 all groups x5,average packet size,5000,0.7592
+cicids2018,5,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2018,6,original,flow iat mean,5000,1.0
+cicids2018,6,original,fwd iat mean,4197,1.0
+cicids2018,6,original,down/up ratio,5000,1.0
+cicids2018,6,original,packet length variance,5000,1.0
+cicids2018,6,original,packet length variance (pooled),1,0.176
+cicids2018,6,original,packet length mean,5000,0.1688
+cicids2018,6,original,flow iat min = fwd iat min,5000,0.357
+cicids2018,6,original,max packet length,5000,1.0
+cicids2018,6,original,min packet length,5000,0.9872
+cicids2018,6,original,flow packets/s,5000,1.0
+cicids2018,6,original,fwd packets/s,5000,1.0
+cicids2018,6,original,bwd packets/s,5000,1.0
+cicids2018,6,original,average packet size,5000,0.7576
+cicids2018,6,original,flow bytes/s,5000,1.0
+cicids2018,6,G1 all groups x5,flow iat mean,5000,1.0
+cicids2018,6,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2018,6,G1 all groups x5,down/up ratio,5000,1.0
+cicids2018,6,G1 all groups x5,packet length variance,5000,1.0
+cicids2018,6,G1 all groups x5,packet length variance (pooled),1,0.2744
+cicids2018,6,G1 all groups x5,packet length mean,5000,0.1958
+cicids2018,6,G1 all groups x5,flow iat min = fwd iat min,5000,0.357
+cicids2018,6,G1 all groups x5,max packet length,5000,1.0
+cicids2018,6,G1 all groups x5,min packet length,5000,1.0
+cicids2018,6,G1 all groups x5,flow packets/s,5000,1.0
+cicids2018,6,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2018,6,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2018,6,G1 all groups x5,average packet size,5000,0.7596
+cicids2018,6,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2018,6,G2 all groups x5,flow iat mean,5000,1.0
+cicids2018,6,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2018,6,G2 all groups x5,down/up ratio,5000,1.0
+cicids2018,6,G2 all groups x5,packet length variance,5000,1.0
+cicids2018,6,G2 all groups x5,packet length variance (pooled),1,0.1908
+cicids2018,6,G2 all groups x5,packet length mean,5000,0.1652
+cicids2018,6,G2 all groups x5,flow iat min = fwd iat min,5000,0.357
+cicids2018,6,G2 all groups x5,max packet length,5000,1.0
+cicids2018,6,G2 all groups x5,min packet length,5000,1.0
+cicids2018,6,G2 all groups x5,flow packets/s,5000,1.0
+cicids2018,6,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2018,6,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2018,6,G2 all groups x5,average packet size,5000,0.7574
+cicids2018,6,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2018,7,original,flow iat mean,5000,1.0
+cicids2018,7,original,fwd iat mean,4177,1.0
+cicids2018,7,original,down/up ratio,5000,1.0
+cicids2018,7,original,packet length variance,5000,1.0
+cicids2018,7,original,packet length variance (pooled),1,0.1664
+cicids2018,7,original,packet length mean,5000,0.1612
+cicids2018,7,original,flow iat min = fwd iat min,5000,0.3506
+cicids2018,7,original,max packet length,5000,1.0
+cicids2018,7,original,min packet length,5000,0.9914
+cicids2018,7,original,flow packets/s,5000,1.0
+cicids2018,7,original,fwd packets/s,5000,1.0
+cicids2018,7,original,bwd packets/s,5000,1.0
+cicids2018,7,original,average packet size,5000,0.769
+cicids2018,7,original,flow bytes/s,5000,1.0
+cicids2018,7,G1 all groups x5,flow iat mean,5000,1.0
+cicids2018,7,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2018,7,G1 all groups x5,down/up ratio,5000,1.0
+cicids2018,7,G1 all groups x5,packet length variance,5000,1.0
+cicids2018,7,G1 all groups x5,packet length variance (pooled),1,0.264
+cicids2018,7,G1 all groups x5,packet length mean,5000,0.181
+cicids2018,7,G1 all groups x5,flow iat min = fwd iat min,5000,0.3506
+cicids2018,7,G1 all groups x5,max packet length,5000,1.0
+cicids2018,7,G1 all groups x5,min packet length,5000,1.0
+cicids2018,7,G1 all groups x5,flow packets/s,5000,1.0
+cicids2018,7,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2018,7,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2018,7,G1 all groups x5,average packet size,5000,0.7706
+cicids2018,7,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2018,7,G2 all groups x5,flow iat mean,5000,1.0
+cicids2018,7,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2018,7,G2 all groups x5,down/up ratio,5000,1.0
+cicids2018,7,G2 all groups x5,packet length variance,5000,1.0
+cicids2018,7,G2 all groups x5,packet length variance (pooled),1,0.1792
+cicids2018,7,G2 all groups x5,packet length mean,5000,0.1566
+cicids2018,7,G2 all groups x5,flow iat min = fwd iat min,5000,0.3506
+cicids2018,7,G2 all groups x5,max packet length,5000,1.0
+cicids2018,7,G2 all groups x5,min packet length,5000,1.0
+cicids2018,7,G2 all groups x5,flow packets/s,5000,1.0
+cicids2018,7,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2018,7,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2018,7,G2 all groups x5,average packet size,5000,0.7686
+cicids2018,7,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2018,8,original,flow iat mean,5000,1.0
+cicids2018,8,original,fwd iat mean,4196,1.0
+cicids2018,8,original,down/up ratio,5000,1.0
+cicids2018,8,original,packet length variance,5000,1.0
+cicids2018,8,original,packet length variance (pooled),1,0.1752
+cicids2018,8,original,packet length mean,5000,0.1676
+cicids2018,8,original,flow iat min = fwd iat min,5000,0.3568
+cicids2018,8,original,max packet length,5000,1.0
+cicids2018,8,original,min packet length,5000,0.9906
+cicids2018,8,original,flow packets/s,5000,1.0
+cicids2018,8,original,fwd packets/s,5000,1.0
+cicids2018,8,original,bwd packets/s,5000,1.0
+cicids2018,8,original,average packet size,5000,0.764
+cicids2018,8,original,flow bytes/s,5000,1.0
+cicids2018,8,G1 all groups x5,flow iat mean,5000,1.0
+cicids2018,8,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2018,8,G1 all groups x5,down/up ratio,5000,1.0
+cicids2018,8,G1 all groups x5,packet length variance,5000,0.9998
+cicids2018,8,G1 all groups x5,packet length variance (pooled),1,0.2812
+cicids2018,8,G1 all groups x5,packet length mean,5000,0.1944
+cicids2018,8,G1 all groups x5,flow iat min = fwd iat min,5000,0.3568
+cicids2018,8,G1 all groups x5,max packet length,5000,1.0
+cicids2018,8,G1 all groups x5,min packet length,5000,1.0
+cicids2018,8,G1 all groups x5,flow packets/s,5000,1.0
+cicids2018,8,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2018,8,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2018,8,G1 all groups x5,average packet size,5000,0.7656
+cicids2018,8,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2018,8,G2 all groups x5,flow iat mean,5000,1.0
+cicids2018,8,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2018,8,G2 all groups x5,down/up ratio,5000,1.0
+cicids2018,8,G2 all groups x5,packet length variance,5000,0.9996
+cicids2018,8,G2 all groups x5,packet length variance (pooled),1,0.1948
+cicids2018,8,G2 all groups x5,packet length mean,5000,0.1632
+cicids2018,8,G2 all groups x5,flow iat min = fwd iat min,5000,0.3568
+cicids2018,8,G2 all groups x5,max packet length,5000,1.0
+cicids2018,8,G2 all groups x5,min packet length,5000,1.0
+cicids2018,8,G2 all groups x5,flow packets/s,5000,1.0
+cicids2018,8,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2018,8,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2018,8,G2 all groups x5,average packet size,5000,0.7638
+cicids2018,8,G2 all groups x5,flow bytes/s,5000,1.0
+cicids2018,9,original,flow iat mean,5000,1.0
+cicids2018,9,original,fwd iat mean,4155,1.0
+cicids2018,9,original,down/up ratio,5000,1.0
+cicids2018,9,original,packet length variance,5000,1.0
+cicids2018,9,original,packet length variance (pooled),1,0.1696
+cicids2018,9,original,packet length mean,5000,0.1644
+cicids2018,9,original,flow iat min = fwd iat min,5000,0.3492
+cicids2018,9,original,max packet length,5000,1.0
+cicids2018,9,original,min packet length,5000,0.9902
+cicids2018,9,original,flow packets/s,5000,1.0
+cicids2018,9,original,fwd packets/s,5000,1.0
+cicids2018,9,original,bwd packets/s,5000,1.0
+cicids2018,9,original,average packet size,5000,0.7546
+cicids2018,9,original,flow bytes/s,5000,1.0
+cicids2018,9,G1 all groups x5,flow iat mean,5000,1.0
+cicids2018,9,G1 all groups x5,fwd iat mean,5000,1.0
+cicids2018,9,G1 all groups x5,down/up ratio,5000,1.0
+cicids2018,9,G1 all groups x5,packet length variance,5000,0.9998
+cicids2018,9,G1 all groups x5,packet length variance (pooled),1,0.2716
+cicids2018,9,G1 all groups x5,packet length mean,5000,0.1846
+cicids2018,9,G1 all groups x5,flow iat min = fwd iat min,5000,0.3492
+cicids2018,9,G1 all groups x5,max packet length,5000,1.0
+cicids2018,9,G1 all groups x5,min packet length,5000,1.0
+cicids2018,9,G1 all groups x5,flow packets/s,5000,1.0
+cicids2018,9,G1 all groups x5,fwd packets/s,5000,1.0
+cicids2018,9,G1 all groups x5,bwd packets/s,5000,1.0
+cicids2018,9,G1 all groups x5,average packet size,5000,0.7556
+cicids2018,9,G1 all groups x5,flow bytes/s,5000,1.0
+cicids2018,9,G2 all groups x5,flow iat mean,5000,1.0
+cicids2018,9,G2 all groups x5,fwd iat mean,5000,1.0
+cicids2018,9,G2 all groups x5,down/up ratio,5000,1.0
+cicids2018,9,G2 all groups x5,packet length variance,5000,0.9998
+cicids2018,9,G2 all groups x5,packet length variance (pooled),1,0.187
+cicids2018,9,G2 all groups x5,packet length mean,5000,0.1584
+cicids2018,9,G2 all groups x5,flow iat min = fwd iat min,5000,0.3492
+cicids2018,9,G2 all groups x5,max packet length,5000,1.0
+cicids2018,9,G2 all groups x5,min packet length,5000,1.0
+cicids2018,9,G2 all groups x5,flow packets/s,5000,1.0
+cicids2018,9,G2 all groups x5,fwd packets/s,5000,1.0
+cicids2018,9,G2 all groups x5,bwd packets/s,5000,1.0
+cicids2018,9,G2 all groups x5,average packet size,5000,0.7544
+cicids2018,9,G2 all groups x5,flow bytes/s,5000,1.0

@@ -373,7 +373,13 @@ def budget_units(groups: tuple[str, ...], mult: float) -> float:
     return len(groups) * math.log2(2.0 * mult)
 
 
-def _score_mode(score_fn, X0: np.ndarray, gi: GroupIndex, groups, mult: float):
+def _g1(gi: GroupIndex):
+    """Default generator (G1, proportional scaling) for a column index."""
+    return lambda X, g, lv: apply_group(X, gi, g, lv)
+
+
+def _score_mode(score_fn, X0: np.ndarray, gi: GroupIndex, groups, mult: float, apply=None):
+    ap = apply if apply is not None else _g1(gi)
     n, d = X0.shape
     G = len(groups)
     levels = (math.sqrt(mult), mult) if mult > 1.0 else (1.0,)
@@ -384,7 +390,7 @@ def _score_mode(score_fn, X0: np.ndarray, gi: GroupIndex, groups, mult: float):
     rows = np.arange(n)
     meta = np.array([j for j in range(G) for _ in levels])
     for _ in range(G):
-        cands = np.stack([apply_group(X, gi, groups[j], lv) for j in range(G) for lv in levels])
+        cands = np.stack([ap(X, groups[j], lv) for j in range(G) for lv in levels])
         C = cands.shape[0]
         sc = np.asarray(score_fn(cands.reshape(C * n, d)), dtype=float).reshape(C, n)
         sc = np.where(applied[:, meta].T, np.inf, sc)
@@ -400,48 +406,51 @@ def _score_mode(score_fn, X0: np.ndarray, gi: GroupIndex, groups, mult: float):
 
 
 def _label_mode(score_fn, X0: np.ndarray, gi: GroupIndex, groups, mult: float,
-                rng: np.random.Generator):
+                rng: np.random.Generator, apply=None):
+    ap = apply if apply is not None else _g1(gi)
     n, G = len(X0), len(groups)
     path = [np.asarray(score_fn(X0), dtype=float)]
     order = np.argsort(rng.random((n, G)), axis=1)
     X = np.asarray(X0, dtype=float)
     for k in range(G):
-        cands = np.stack([apply_group(X, gi, g, mult) for g in groups])
+        cands = np.stack([ap(X, g, mult) for g in groups])
         X = cands[order[:, k], np.arange(n)]
         path.append(np.asarray(score_fn(X), dtype=float))
     return np.column_stack(path), X
 
 
-def attack_path(score_fn, X0: np.ndarray, gi: GroupIndex, groups: tuple[str, ...], mult: float,
-                query_mode: str, rng: np.random.Generator | None = None):
+def attack_path(score_fn, X0: np.ndarray, gi: GroupIndex | None, groups: tuple[str, ...], mult: float,
+                query_mode: str, rng: np.random.Generator | None = None, apply=None):
     """Scores along the attack path of every flow (array (n, K + 1), column 0 unmutated) and the
     final mutated flows. The evaded status at threshold tau is ``path.min(axis=1) <= tau``."""
     if query_mode == "score":
-        return _score_mode(score_fn, np.asarray(X0, dtype=float), gi, groups, mult)
+        return _score_mode(score_fn, np.asarray(X0, dtype=float), gi, groups, mult, apply)
     if query_mode == "label":
         if rng is None:
             raise ValueError("label mode needs an rng")
-        return _label_mode(score_fn, np.asarray(X0, dtype=float), gi, groups, mult, rng)
+        return _label_mode(score_fn, np.asarray(X0, dtype=float), gi, groups, mult, rng, apply)
     raise ValueError(query_mode)
 
 
-def score_path(score_fn, X0, gi, groups, mult, query_mode, rng=None) -> np.ndarray:
-    return attack_path(score_fn, X0, gi, groups, mult, query_mode, rng)[0]
+def score_path(score_fn, X0, gi, groups, mult, query_mode, rng=None, apply=None) -> np.ndarray:
+    return attack_path(score_fn, X0, gi, groups, mult, query_mode, rng, apply)[0]
 
 
-def _build(X0: np.ndarray, gi: GroupIndex, groups, idx: np.ndarray, grid: np.ndarray) -> np.ndarray:
+def _build(X0: np.ndarray, gi: GroupIndex | None, groups, idx: np.ndarray, grid: np.ndarray,
+           apply=None) -> np.ndarray:
     """Flows with group j at level grid[idx[:, j]] (level index 0 = unchanged); groups in fixed order."""
+    ap = apply if apply is not None else _g1(gi)
     Y = np.array(X0, dtype=float, copy=True)
     for j, g in enumerate(groups):
         lv = grid[idx[:, j]]
         rows = lv > 1.0
         if rows.any():
-            Y[rows] = apply_group(Y[rows], gi, g, lv[rows])
+            Y[rows] = ap(Y[rows], g, lv[rows])
     return Y
 
 
-def strong_attack(score_fn, X0: np.ndarray, gi: GroupIndex, groups: tuple[str, ...], mult: float,
-                  rng: np.random.Generator):
+def strong_attack(score_fn, X0: np.ndarray, gi: GroupIndex | None, groups: tuple[str, ...], mult: float,
+                  rng: np.random.Generator, apply=None):
     """Strong score-query attacker: per-group level search over STRONG_LEVELS levels in [1, mult].
 
     Coordinate sweep over the groups from two starts (every group at the top level; random levels).
@@ -468,7 +477,7 @@ def strong_attack(score_fn, X0: np.ndarray, gi: GroupIndex, groups: tuple[str, .
             for k in range(K):
                 ik = idx.copy()
                 ik[:, j] = k
-                cand[k] = _build(X0, gi, groups, ik, grid)
+                cand[k] = _build(X0, gi, groups, ik, grid, apply)
             sc = np.asarray(score_fn(cand.reshape(K * n, d)), dtype=float).reshape(K, n)
             kmin = np.argmin(sc, axis=0)
             m = sc[kmin, rows]

@@ -73,7 +73,8 @@ G2 must not share helper functions with G1. A different set of physical assumpti
 - **Length (random target).**
   - Each flow draws a target mean payload T ~ Uniform(current mean, min(MTU, m·current mean)) per flow.
   - Only data-carrying packets are padded, and the padded size is drawn per flow.
-  - Fwd Pkt Len Max = max(old max, T); Min stays unchanged (pure ACKs are not padded); Mean = T.
+  - Fwd Pkt Len Max = max(old max, T / (1 − a)), where T / (1 − a) is the padded data-packet size and a the
+    zero-payload share (the maximum never falls); Min stays unchanged (pure ACKs are not padded); Mean = T.
   - Std is recomputed from a two-point mixture (unpadded ACK share, padded data share).
   - Totals, Avg Fwd Segment Size, Packet Length Mean/Std/Var and Average Packet Size are recomputed from the
     totals.
@@ -81,9 +82,14 @@ G2 must not share helper functions with G1. A different set of physical assumpti
   - Add k = ⌈(m − 1)·n_fwd⌉ forward packets with zero payload.
   - Packet counts and Fwd Header Length grow.
   - Byte totals are unchanged, so the forward mean length drops and Fwd Pkt Len Min becomes 0.
+  - Fwd IAT Mean becomes Fwd IAT Total / (n_fwd_new − 1), applied in delta form. Fwd IAT Total, Min, Max and Std
+    are unchanged (the dummies sit inside the existing duration).
   - Rates, Down/Up Ratio and the packet-length aggregates are recomputed.
-- **After any group, recompute** Flow Bytes/s, Flow/Fwd/Bwd Packets/s, Flow IAT Mean (duration / (n − 1)) and
-  Down/Up Ratio. When G2 timing coupling applies, Bwd Packets/s changes only through the duration.
+- **After any group, recompute in delta form.** Flow Bytes/s and the Packets/s rates are scaled by the ratio of the new
+  to the old count and duration. Flow IAT Mean, Down/Up Ratio, the packet-length mean and average packet size, the
+  packet-length variance and std, and the max and min packet length move by the change their inputs imply, so an
+  original flow that breaks the textbook identity keeps its offset. Timing never changes a length column. Each
+  group's allowed decreases are listed in `MAY_DECREASE` in `gen2.py` and tested.
 
 ### 3.3 Realism diagnostics (report for both generators)
 
@@ -120,8 +126,8 @@ All are trained on the same splits per seed. The scenarios are known (every fami
 
 **Seeds and splits.**
 - 10 seeds.
-- Benign cap 600,000 per dataset. The split is train 60% / calibration 20% / test 20%. This gives 60,000 rows in
-  `cal_thr` and 120,000 benign test rows.
+- Benign cap 600,000 per dataset. The split is train 60% / calibration 20% / test 20%. The benign test set has
+  120,000 rows on CIC-IDS2017 and 85,822 rows on CSE-CIC-IDS2018 (20% of the benign rows the loader keeps there).
 - Family cap 10,000. Use 1,000 attack test flows per family for E4.
 
 **FPR grid.** {1e-4, 5e-4, 1e-3, 1e-2}.
