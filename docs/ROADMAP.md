@@ -39,7 +39,12 @@ aim at two or three Q1 journal papers that build on the existing themes.
 
 ## 3. Proposed projects
 
-### Main project: FDR-controlled intrusion detection for unseen attacks and new networks
+> **Update 2026-11-27.** The main project is now the data-driven game-theoretic evaluation of ML-IDS in
+> [`design_econ_game.md`](design_econ_game.md). The conformal project below is kept as background. Its
+> E1–E3 results feed the new payoff tables, and [`lit_review_conformal_ids.md`](lit_review_conformal_ids.md)
+> explains why conformal-for-IDS alone is too crowded.
+
+### Former main project: FDR-controlled intrusion detection for unseen attacks and new networks
 
 *Motivation.* On CIC-style benchmarks, flow classification with a random split is saturated:
 XGBoost reaches AUROC ≈ 1.0, often through testbed shortcuts (destination port, TTL, window
