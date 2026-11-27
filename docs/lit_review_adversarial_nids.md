@@ -75,3 +75,62 @@ Date: 2026-11-27. Not a systematic review. Method: web search plus Crossref and 
 - Read in full: J (2402.16912), K (2404.04188), L (2409.07448), P (2611.00713), O (2602.10299). Check whether any of them already includes benign-side mutation or cross-generator tests.
 - Resolve DOI for I (Future Internet) and the Debicha ICSNC 2021 AT paper; confirm SoK author list for B.
 - Re-run searches on OpenAlex and Google Scholar with "adversarial training" plus "benign" plus "perturbed" plus "false positive" and "cross-attack" for 2025-2026, as the web search tool is US-only and snippet based.
+
+## Addendum: full-text reads of the two highest-risk papers (2026-11-27)
+
+**Zaro, "Adversarial Robustness Is Not Zero-Day Generalization" (arXiv 2611.00713, v1, 31 Oct 2026).** Full HTML text read.
+
+*Setup.*
+- Data: corrected CIC-IDS2017 (Liu et al. release) and CSE-CIC-IDS2018 (3 seeds).
+- Attacker controls 42 of 82 features, listed in its Appendix VIII.
+- Perturbation: two-sided L∞ with ε ≤ 0.2 in standardized signed-log space. There is no increase-only rule and no MTU cap.
+- Derived features are not recomputed in the main runs, but a repair run (Table IX) recomputes them.
+- Attacks: FGSM/PGD transfer, white-box PGD, SimBA, tree-aware search, and exact MILP for RF/XGB.
+- Operating point: 1% FPR.
+
+*Results.*
+- Worst-case robustness at ε ≤ 0.2: RF 0.997, XGB 0.997 (Table VIII).
+- MILP-certified detection at ε = 0.2: at least 0.998 for RF and XGB.
+- Leave-one-attack-out detection: XGB 0.402 (gap 59.5 points).
+- No adversarial training. No benign-side perturbation. No cross-generator test.
+
+**Reconciliation with our numbers.** Zaro's budget is small. In our E4 table, xgb at FPR 1e-3, worst case over attackers and group subsets, at multiplier ×1.5 gives:
+
+| Dataset | Family | Recall at ×1.5 |
+|---|---|---|
+| CIC-IDS2017 | DDoS | 0.996 |
+| CIC-IDS2017 | DoS | 0.980 |
+| CIC-IDS2017 | BruteForce | 0.985 |
+| CIC-IDS2018 | DoS | 0.997 |
+
+These agree with Zaro. The collapse appears at larger, but still client-feasible, budgets:
+- ×2: CSE-CIC-IDS2018 BruteForce 0.003.
+- ×5: CSE-CIC-IDS2018 Bot 0.013; CIC-IDS2017 BruteForce 0.24.
+
+So the two results do not conflict. Robustness of tree detectors is budget-dependent. A small-ε certificate says little about an attacker who can add delay or padding freely, because waiting longer or sending more bytes costs a client almost nothing.
+
+*Required in our paper.*
+- Report recall-versus-budget curves.
+- Map our multipliers to Zaro's ε (signed-log standardized distance of the mutated vectors).
+- State the budget at which each family breaks.
+- Ideally also run on the corrected CIC-IDS2017.
+
+**Domico, Noirot Ferrand and McDaniel, "The Role of Learning in Attacking/Evading ML-based Network Intrusion Detection" (arXiv 2602.10299, v3).** The abstract and §2–4.2 were read verbatim. Later sections were only summarised and must be checked against the PDF.
+
+*Setup.*
+- NetFlow features (UNSW-NB15, ToN-IoT, CSE-CIC-IDS2018).
+- Five increase-only perturbable features. Duration is derived from per-packet delay, and bytes per packet are kept in the benign band.
+- Hard-label black-box attackers: HSJA, random search and RL policies.
+- Detectors: RF and XGB at 1% and 0.1% FPR.
+
+*Results.*
+- Evasion succeeds in five of six environments, e.g. CSE-CIC XGB at 1% FPR: TPR 0.87 → 0.30 (summary-level figure).
+- It also studies **alert inflation**: an adversary perturbs benign-looking traffic to raise FPR (0.09–0.24, summary-level).
+- It also tests transfer across detectors and datasets.
+- No adversarial training.
+
+*Distinction from our claim 3.* Domico et al.'s benign-side perturbation is an *attack* (alert flooding against a clean detector). Our mutated-benign test is a *control* for adversarially trained detectors. It asks whether ordinary benign variation of the same kind is flagged because the defender learned the generator's fingerprint. These are different questions, but the paper must cite Domico et al. and explain the difference. Their cross-detector and cross-dataset transfer is not cross-generator transfer.
+
+**Updated positioning.**
+- Claim 1: a budget-resolved confirmation that reconciles Zaro (small ε, robust) and Domico et al. (larger budget, evasion).
+- Claim 3 (mutation fingerprint, benign-side control for adversarial training, cross-generator protocol) remains the main contribution. No full-text read so far covers it.
