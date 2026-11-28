@@ -1,0 +1,110 @@
+{
+  "day": "tuesday",
+  "pcap": "Tuesday-WorkingHours.pcap",
+  "sha256": "080c2250154c5a174c03660ed0f75a3858d41a27511ba716e780d7bcb1ec4c57",
+  "size_bytes": 11048283608,
+  "frames_total": 11551954,
+  "packets_kept_ipv4_tcp_udp": 11468986,
+  "skipped": {
+    "skipped_non_ipv4": 82218,
+    "skipped_ip_other_proto_or_fragment": 750,
+    "skipped_truncated": 0
+  },
+  "trailing_packets_absorbed": 165616,
+  "flows_extracted": 322277,
+  "tcp_flows": 122452,
+  "flows_single_packet": 452,
+  "max_flow_duration_us": 119999977.0,
+  "cic_rows_day": 445325,
+  "cic_rows_by_label": {
+    "BENIGN": 431493,
+    "FTP-Patator": 7935,
+    "SSH-Patator": 5897
+  },
+  "shift": {
+    "shift_us": 10800000000,
+    "shift_hours": 3.0,
+    "sample_hour_utc": 1499169600,
+    "sample_flows": 66481,
+    "flows_matched_at_best": 66422,
+    "flows_matched_best_hour_grid": 66422,
+    "second_best_minute_flows": 5646,
+    "plateau_minutes": 1
+  },
+  "primary_rule_flows_by_how": {
+    "pattern": 6952,
+    "majority": 314799
+  },
+  "drop_rule_flows_ambiguous": 1363,
+  "connection_flows_by_label": {
+    "BENIGN": 299618,
+    "FTP-Patator": 3973,
+    "SSH-Patator": 2979,
+    "Bot": 0,
+    "PortScan": 0,
+    "DDoS": 0
+  },
+  "drop_rule_flows_by_label": {
+    "BENIGN": 314767,
+    "FTP-Patator": 2687,
+    "SSH-Patator": 2934,
+    "Bot": 0,
+    "PortScan": 0,
+    "DDoS": 0
+  },
+  "cic_attack_rows": 13832,
+  "cic_attack_rows_matched": 12658,
+  "cic_attack_match_rate": 0.9151243493348756,
+  "cic_benign_rows_matched_share": 0.9227241229869314,
+  "labels_by_name": {
+    "BENIGN": {
+      "cic_rows": 431493,
+      "cic_rows_matched": 398149,
+      "flows_labelled": 314780,
+      "flows_labelled_drop_rule": 314767
+    },
+    "FTP-Patator": {
+      "cic_rows": 7935,
+      "cic_rows_matched": 7350,
+      "flows_labelled": 3984,
+      "flows_labelled_drop_rule": 2687
+    },
+    "SSH-Patator": {
+      "cic_rows": 5897,
+      "cic_rows_matched": 5308,
+      "flows_labelled": 2987,
+      "flows_labelled_drop_rule": 2934
+    },
+    "Bot": {
+      "cic_rows": 0,
+      "cic_rows_matched": 0,
+      "flows_labelled": 0,
+      "flows_labelled_drop_rule": 0
+    },
+    "PortScan": {
+      "cic_rows": 0,
+      "cic_rows_matched": 0,
+      "flows_labelled": 0,
+      "flows_labelled_drop_rule": 0
+    },
+    "DDoS": {
+      "cic_rows": 0,
+      "cic_rows_matched": 0,
+      "flows_labelled": 0,
+      "flows_labelled_drop_rule": 0
+    }
+  },
+  "flows_unmatched": 526,
+  "flows_ambiguous_dropped": 0,
+  "flows_matched": 321751,
+  "attack_flows_matched": 6971,
+  "attack_flow_match_rate_vs_cic": 0.9151243493348756,
+  "benign_flows_matched": 314780,
+  "benign_flows_kept": 300000,
+  "attack_flows_kept": 6971,
+  "packet_pool_flows": 306971,
+  "reextraction_max_rel_diff": 0.0,
+  "cache_file": "data/pcap/cache/tuesday.npz",
+  "shift_us": 10800000000,
+  "runtime_s": 155.1
+}

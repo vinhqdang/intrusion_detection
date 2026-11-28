@@ -1,0 +1,7 @@
+family,rows,exact_duplicates,label_conflicts,feature_duplicates,rows_after,duplicate_share
+Benign,569039,39941,0,0,529098,0.07019026815385238
+SSH-Patator,2979,0,0,0,2979,0.0
+FTP-Patator,3973,0,0,0,3973,0.0
+Bot,738,0,0,0,738,0.0
+DDoS,85295,0,0,0,85295,0.0
+PortScan,1176,6,0,0,1170,0.00510204081632653

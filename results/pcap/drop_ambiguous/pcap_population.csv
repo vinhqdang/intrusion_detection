@@ -1,0 +1,7 @@
+family,rows_after_dedup
+Benign,529097
+SSH-Patator,2926
+FTP-Patator,2676
+Bot,738
+DDoS,64579
+PortScan,1047

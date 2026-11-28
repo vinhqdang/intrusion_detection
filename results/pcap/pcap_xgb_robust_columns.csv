@@ -1,0 +1,761 @@
+seed,feature,kept,excluded_by,constant_in_population
+0,Flow Duration,False,G1+G2 touched+P,False
+0,Total Fwd Packets,False,G1+G2 touched+P,False
+0,Total Backward Packets,False,P,False
+0,Total Length of Fwd Packets,False,G1+G2 touched+P,False
+0,Total Length of Bwd Packets,False,P,False
+0,Fwd Packet Length Max,False,G1+G2 touched+P,False
+0,Fwd Packet Length Min,False,G1+G2 touched+P,False
+0,Fwd Packet Length Mean,False,G1+G2 touched+P,False
+0,Fwd Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+0,Bwd Packet Length Max,True,none,False
+0,Bwd Packet Length Min,True,none,False
+0,Bwd Packet Length Mean,False,P,False
+0,Bwd Packet Length Std,False,P,False
+0,Flow Bytes/s,False,G1+G2 touched+P,False
+0,Flow Packets/s,False,G1+G2 touched+P,False
+0,Flow IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+0,Flow IAT Std,False,G1+G1 dependent+G2 touched+P,False
+0,Flow IAT Max,False,G1+G1 dependent+G2 touched+P,False
+0,Flow IAT Min,False,G1+G1 dependent+G2 touched+P,False
+0,Fwd IAT Total,False,G1+G1 dependent+G2 touched+P,False
+0,Fwd IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+0,Fwd IAT Std,False,G1+G1 dependent+G2 touched+P,False
+0,Fwd IAT Max,False,G1+G1 dependent+G2 touched+P,False
+0,Fwd IAT Min,False,G1+G1 dependent+G2 touched+P,False
+0,Bwd IAT Total,False,G2 touched+G2 coupled+P,False
+0,Bwd IAT Mean,False,G2 touched+G2 coupled+P,False
+0,Bwd IAT Std,False,P,False
+0,Bwd IAT Max,False,G2 touched+G2 coupled+P,False
+0,Bwd IAT Min,False,P,False
+0,Fwd PSH Flags,False,G1 dependent+P,False
+0,Bwd PSH Flags,False,P,False
+0,Fwd URG Flags,False,G1 dependent,True
+0,Bwd URG Flags,True,none,True
+0,Fwd Header Length,False,G1+G2 touched+P,False
+0,Bwd Header Length,False,P,False
+0,Fwd Packets/s,False,G1+G2 touched+P,False
+0,Bwd Packets/s,False,G1+G2 touched+P,False
+0,Min Packet Length,False,G1+G2 touched+P,False
+0,Max Packet Length,False,G1+G2 touched+P,False
+0,Packet Length Mean,False,G1+G2 touched+P,False
+0,Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+0,Packet Length Variance,False,G1+G1 dependent+G2 touched+P,False
+0,FIN Flag Count,False,P,False
+0,SYN Flag Count,True,none,False
+0,RST Flag Count,True,none,False
+0,PSH Flag Count,False,P,False
+0,ACK Flag Count,False,P,False
+0,URG Flag Count,True,none,True
+0,CWE Flag Count,True,none,False
+0,ECE Flag Count,True,none,False
+0,Down/Up Ratio,False,G1+G1 dependent+G2 touched+P,False
+0,Average Packet Size,False,G1+G2 touched+P,False
+0,Avg Fwd Segment Size,False,G1+G2 touched+P,False
+0,Avg Bwd Segment Size,False,P,False
+0,Fwd Avg Bytes/Bulk,True,none,True
+0,Fwd Avg Packets/Bulk,True,none,True
+0,Fwd Avg Bulk Rate,True,none,True
+0,Bwd Avg Bytes/Bulk,True,none,True
+0,Bwd Avg Packets/Bulk,True,none,True
+0,Bwd Avg Bulk Rate,True,none,True
+0,Subflow Fwd Packets,False,G1+G2 touched+P,False
+0,Subflow Fwd Bytes,False,G1+G2 touched+P,False
+0,Subflow Bwd Packets,False,P,False
+0,Subflow Bwd Bytes,False,P,False
+0,Init_Win_bytes_forward,False,G1 dependent,False
+0,Init_Win_bytes_backward,True,none,False
+0,act_data_pkt_fwd,False,G1+P,False
+0,min_seg_size_forward,True,none,False
+0,Active Mean,False,G1 dependent+G2 touched+G2 coupled+P,False
+0,Active Std,False,G1 dependent+P,False
+0,Active Max,False,G1 dependent+G2 touched+G2 coupled+P,False
+0,Active Min,False,G1 dependent+P,False
+0,Idle Mean,False,G1 dependent+P,False
+0,Idle Std,False,G1 dependent+P,False
+0,Idle Max,False,G1 dependent+P,False
+0,Idle Min,False,G1 dependent+P,False
+1,Flow Duration,False,G1+G2 touched+P,False
+1,Total Fwd Packets,False,G1+G2 touched+P,False
+1,Total Backward Packets,False,P,False
+1,Total Length of Fwd Packets,False,G1+G2 touched+P,False
+1,Total Length of Bwd Packets,False,P,False
+1,Fwd Packet Length Max,False,G1+G2 touched+P,False
+1,Fwd Packet Length Min,False,G1+G2 touched+P,False
+1,Fwd Packet Length Mean,False,G1+G2 touched+P,False
+1,Fwd Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+1,Bwd Packet Length Max,True,none,False
+1,Bwd Packet Length Min,True,none,False
+1,Bwd Packet Length Mean,False,P,False
+1,Bwd Packet Length Std,False,P,False
+1,Flow Bytes/s,False,G1+G2 touched+P,False
+1,Flow Packets/s,False,G1+G2 touched+P,False
+1,Flow IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+1,Flow IAT Std,False,G1+G1 dependent+G2 touched+P,False
+1,Flow IAT Max,False,G1+G1 dependent+G2 touched+P,False
+1,Flow IAT Min,False,G1+G1 dependent+G2 touched+P,False
+1,Fwd IAT Total,False,G1+G1 dependent+G2 touched+P,False
+1,Fwd IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+1,Fwd IAT Std,False,G1+G1 dependent+G2 touched+P,False
+1,Fwd IAT Max,False,G1+G1 dependent+G2 touched+P,False
+1,Fwd IAT Min,False,G1+G1 dependent+G2 touched+P,False
+1,Bwd IAT Total,False,G2 touched+G2 coupled+P,False
+1,Bwd IAT Mean,False,G2 touched+G2 coupled+P,False
+1,Bwd IAT Std,False,P,False
+1,Bwd IAT Max,False,G2 touched+G2 coupled+P,False
+1,Bwd IAT Min,False,P,False
+1,Fwd PSH Flags,False,G1 dependent+P,False
+1,Bwd PSH Flags,False,P,False
+1,Fwd URG Flags,False,G1 dependent,True
+1,Bwd URG Flags,True,none,True
+1,Fwd Header Length,False,G1+G2 touched+P,False
+1,Bwd Header Length,False,P,False
+1,Fwd Packets/s,False,G1+G2 touched+P,False
+1,Bwd Packets/s,False,G1+G2 touched+P,False
+1,Min Packet Length,False,G1+G2 touched+P,False
+1,Max Packet Length,False,G1+G2 touched+P,False
+1,Packet Length Mean,False,G1+G2 touched+P,False
+1,Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+1,Packet Length Variance,False,G1+G1 dependent+G2 touched+P,False
+1,FIN Flag Count,False,P,False
+1,SYN Flag Count,True,none,False
+1,RST Flag Count,True,none,False
+1,PSH Flag Count,False,P,False
+1,ACK Flag Count,False,P,False
+1,URG Flag Count,True,none,True
+1,CWE Flag Count,True,none,False
+1,ECE Flag Count,True,none,False
+1,Down/Up Ratio,False,G1+G1 dependent+G2 touched+P,False
+1,Average Packet Size,False,G1+G2 touched+P,False
+1,Avg Fwd Segment Size,False,G1+G2 touched+P,False
+1,Avg Bwd Segment Size,False,P,False
+1,Fwd Avg Bytes/Bulk,True,none,True
+1,Fwd Avg Packets/Bulk,True,none,True
+1,Fwd Avg Bulk Rate,True,none,True
+1,Bwd Avg Bytes/Bulk,True,none,True
+1,Bwd Avg Packets/Bulk,True,none,True
+1,Bwd Avg Bulk Rate,True,none,True
+1,Subflow Fwd Packets,False,G1+G2 touched+P,False
+1,Subflow Fwd Bytes,False,G1+G2 touched+P,False
+1,Subflow Bwd Packets,False,P,False
+1,Subflow Bwd Bytes,False,P,False
+1,Init_Win_bytes_forward,False,G1 dependent,False
+1,Init_Win_bytes_backward,True,none,False
+1,act_data_pkt_fwd,False,G1+P,False
+1,min_seg_size_forward,True,none,False
+1,Active Mean,False,G1 dependent+G2 touched+G2 coupled+P,False
+1,Active Std,False,G1 dependent+P,False
+1,Active Max,False,G1 dependent+G2 touched+G2 coupled+P,False
+1,Active Min,False,G1 dependent+P,False
+1,Idle Mean,False,G1 dependent+P,False
+1,Idle Std,False,G1 dependent+P,False
+1,Idle Max,False,G1 dependent+P,False
+1,Idle Min,False,G1 dependent+P,False
+2,Flow Duration,False,G1+G2 touched+P,False
+2,Total Fwd Packets,False,G1+G2 touched+P,False
+2,Total Backward Packets,False,P,False
+2,Total Length of Fwd Packets,False,G1+G2 touched+P,False
+2,Total Length of Bwd Packets,False,P,False
+2,Fwd Packet Length Max,False,G1+G2 touched+P,False
+2,Fwd Packet Length Min,False,G1+G2 touched+P,False
+2,Fwd Packet Length Mean,False,G1+G2 touched+P,False
+2,Fwd Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+2,Bwd Packet Length Max,True,none,False
+2,Bwd Packet Length Min,True,none,False
+2,Bwd Packet Length Mean,False,P,False
+2,Bwd Packet Length Std,False,P,False
+2,Flow Bytes/s,False,G1+G2 touched+P,False
+2,Flow Packets/s,False,G1+G2 touched+P,False
+2,Flow IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+2,Flow IAT Std,False,G1+G1 dependent+G2 touched+P,False
+2,Flow IAT Max,False,G1+G1 dependent+G2 touched+P,False
+2,Flow IAT Min,False,G1+G1 dependent+G2 touched+P,False
+2,Fwd IAT Total,False,G1+G1 dependent+G2 touched+P,False
+2,Fwd IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+2,Fwd IAT Std,False,G1+G1 dependent+G2 touched+P,False
+2,Fwd IAT Max,False,G1+G1 dependent+G2 touched+P,False
+2,Fwd IAT Min,False,G1+G1 dependent+G2 touched+P,False
+2,Bwd IAT Total,False,G2 touched+G2 coupled+P,False
+2,Bwd IAT Mean,False,G2 touched+G2 coupled+P,False
+2,Bwd IAT Std,False,P,False
+2,Bwd IAT Max,False,G2 touched+G2 coupled+P,False
+2,Bwd IAT Min,False,P,False
+2,Fwd PSH Flags,False,G1 dependent+P,False
+2,Bwd PSH Flags,False,P,False
+2,Fwd URG Flags,False,G1 dependent,True
+2,Bwd URG Flags,True,none,True
+2,Fwd Header Length,False,G1+G2 touched+P,False
+2,Bwd Header Length,False,P,False
+2,Fwd Packets/s,False,G1+G2 touched+P,False
+2,Bwd Packets/s,False,G1+G2 touched+P,False
+2,Min Packet Length,False,G1+G2 touched+P,False
+2,Max Packet Length,False,G1+G2 touched+P,False
+2,Packet Length Mean,False,G1+G2 touched+P,False
+2,Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+2,Packet Length Variance,False,G1+G1 dependent+G2 touched+P,False
+2,FIN Flag Count,False,P,False
+2,SYN Flag Count,True,none,False
+2,RST Flag Count,True,none,False
+2,PSH Flag Count,False,P,False
+2,ACK Flag Count,False,P,False
+2,URG Flag Count,True,none,True
+2,CWE Flag Count,True,none,False
+2,ECE Flag Count,True,none,False
+2,Down/Up Ratio,False,G1+G1 dependent+G2 touched+P,False
+2,Average Packet Size,False,G1+G2 touched+P,False
+2,Avg Fwd Segment Size,False,G1+G2 touched+P,False
+2,Avg Bwd Segment Size,False,P,False
+2,Fwd Avg Bytes/Bulk,True,none,True
+2,Fwd Avg Packets/Bulk,True,none,True
+2,Fwd Avg Bulk Rate,True,none,True
+2,Bwd Avg Bytes/Bulk,True,none,True
+2,Bwd Avg Packets/Bulk,True,none,True
+2,Bwd Avg Bulk Rate,True,none,True
+2,Subflow Fwd Packets,False,G1+G2 touched+P,False
+2,Subflow Fwd Bytes,False,G1+G2 touched+P,False
+2,Subflow Bwd Packets,False,P,False
+2,Subflow Bwd Bytes,False,P,False
+2,Init_Win_bytes_forward,False,G1 dependent,False
+2,Init_Win_bytes_backward,True,none,False
+2,act_data_pkt_fwd,False,G1+P,False
+2,min_seg_size_forward,True,none,False
+2,Active Mean,False,G1 dependent+G2 touched+G2 coupled+P,False
+2,Active Std,False,G1 dependent+P,False
+2,Active Max,False,G1 dependent+G2 touched+G2 coupled+P,False
+2,Active Min,False,G1 dependent+P,False
+2,Idle Mean,False,G1 dependent+P,False
+2,Idle Std,False,G1 dependent+P,False
+2,Idle Max,False,G1 dependent+P,False
+2,Idle Min,False,G1 dependent+P,False
+3,Flow Duration,False,G1+G2 touched+P,False
+3,Total Fwd Packets,False,G1+G2 touched+P,False
+3,Total Backward Packets,False,P,False
+3,Total Length of Fwd Packets,False,G1+G2 touched+P,False
+3,Total Length of Bwd Packets,False,P,False
+3,Fwd Packet Length Max,False,G1+G2 touched+P,False
+3,Fwd Packet Length Min,False,G1+G2 touched+P,False
+3,Fwd Packet Length Mean,False,G1+G2 touched+P,False
+3,Fwd Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+3,Bwd Packet Length Max,False,P,False
+3,Bwd Packet Length Min,True,none,False
+3,Bwd Packet Length Mean,False,P,False
+3,Bwd Packet Length Std,False,P,False
+3,Flow Bytes/s,False,G1+G2 touched+P,False
+3,Flow Packets/s,False,G1+G2 touched+P,False
+3,Flow IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+3,Flow IAT Std,False,G1+G1 dependent+G2 touched+P,False
+3,Flow IAT Max,False,G1+G1 dependent+G2 touched+P,False
+3,Flow IAT Min,False,G1+G1 dependent+G2 touched+P,False
+3,Fwd IAT Total,False,G1+G1 dependent+G2 touched+P,False
+3,Fwd IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+3,Fwd IAT Std,False,G1+G1 dependent+G2 touched+P,False
+3,Fwd IAT Max,False,G1+G1 dependent+G2 touched+P,False
+3,Fwd IAT Min,False,G1+G1 dependent+G2 touched+P,False
+3,Bwd IAT Total,False,G2 touched+G2 coupled+P,False
+3,Bwd IAT Mean,False,G2 touched+G2 coupled+P,False
+3,Bwd IAT Std,False,P,False
+3,Bwd IAT Max,False,G2 touched+G2 coupled+P,False
+3,Bwd IAT Min,False,P,False
+3,Fwd PSH Flags,False,G1 dependent+P,False
+3,Bwd PSH Flags,False,P,False
+3,Fwd URG Flags,False,G1 dependent,True
+3,Bwd URG Flags,True,none,True
+3,Fwd Header Length,False,G1+G2 touched+P,False
+3,Bwd Header Length,False,P,False
+3,Fwd Packets/s,False,G1+G2 touched+P,False
+3,Bwd Packets/s,False,G1+G2 touched+P,False
+3,Min Packet Length,False,G1+G2 touched+P,False
+3,Max Packet Length,False,G1+G2 touched+P,False
+3,Packet Length Mean,False,G1+G2 touched+P,False
+3,Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+3,Packet Length Variance,False,G1+G1 dependent+G2 touched+P,False
+3,FIN Flag Count,False,P,False
+3,SYN Flag Count,True,none,False
+3,RST Flag Count,True,none,False
+3,PSH Flag Count,False,P,False
+3,ACK Flag Count,False,P,False
+3,URG Flag Count,True,none,True
+3,CWE Flag Count,True,none,False
+3,ECE Flag Count,True,none,False
+3,Down/Up Ratio,False,G1+G1 dependent+G2 touched+P,False
+3,Average Packet Size,False,G1+G2 touched+P,False
+3,Avg Fwd Segment Size,False,G1+G2 touched+P,False
+3,Avg Bwd Segment Size,False,P,False
+3,Fwd Avg Bytes/Bulk,True,none,True
+3,Fwd Avg Packets/Bulk,True,none,True
+3,Fwd Avg Bulk Rate,True,none,True
+3,Bwd Avg Bytes/Bulk,True,none,True
+3,Bwd Avg Packets/Bulk,True,none,True
+3,Bwd Avg Bulk Rate,True,none,True
+3,Subflow Fwd Packets,False,G1+G2 touched+P,False
+3,Subflow Fwd Bytes,False,G1+G2 touched+P,False
+3,Subflow Bwd Packets,False,P,False
+3,Subflow Bwd Bytes,False,P,False
+3,Init_Win_bytes_forward,False,G1 dependent,False
+3,Init_Win_bytes_backward,True,none,False
+3,act_data_pkt_fwd,False,G1+P,False
+3,min_seg_size_forward,True,none,False
+3,Active Mean,False,G1 dependent+G2 touched+G2 coupled+P,False
+3,Active Std,False,G1 dependent+P,False
+3,Active Max,False,G1 dependent+G2 touched+G2 coupled+P,False
+3,Active Min,False,G1 dependent+P,False
+3,Idle Mean,False,G1 dependent+P,False
+3,Idle Std,False,G1 dependent+P,False
+3,Idle Max,False,G1 dependent+P,False
+3,Idle Min,False,G1 dependent+P,False
+4,Flow Duration,False,G1+G2 touched+P,False
+4,Total Fwd Packets,False,G1+G2 touched+P,False
+4,Total Backward Packets,False,P,False
+4,Total Length of Fwd Packets,False,G1+G2 touched+P,False
+4,Total Length of Bwd Packets,False,P,False
+4,Fwd Packet Length Max,False,G1+G2 touched+P,False
+4,Fwd Packet Length Min,False,G1+G2 touched+P,False
+4,Fwd Packet Length Mean,False,G1+G2 touched+P,False
+4,Fwd Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+4,Bwd Packet Length Max,False,P,False
+4,Bwd Packet Length Min,True,none,False
+4,Bwd Packet Length Mean,False,P,False
+4,Bwd Packet Length Std,False,P,False
+4,Flow Bytes/s,False,G1+G2 touched+P,False
+4,Flow Packets/s,False,G1+G2 touched+P,False
+4,Flow IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+4,Flow IAT Std,False,G1+G1 dependent+G2 touched+P,False
+4,Flow IAT Max,False,G1+G1 dependent+G2 touched+P,False
+4,Flow IAT Min,False,G1+G1 dependent+G2 touched+P,False
+4,Fwd IAT Total,False,G1+G1 dependent+G2 touched+P,False
+4,Fwd IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+4,Fwd IAT Std,False,G1+G1 dependent+G2 touched+P,False
+4,Fwd IAT Max,False,G1+G1 dependent+G2 touched+P,False
+4,Fwd IAT Min,False,G1+G1 dependent+G2 touched+P,False
+4,Bwd IAT Total,False,G2 touched+G2 coupled+P,False
+4,Bwd IAT Mean,False,G2 touched+G2 coupled+P,False
+4,Bwd IAT Std,False,P,False
+4,Bwd IAT Max,False,G2 touched+G2 coupled+P,False
+4,Bwd IAT Min,False,P,False
+4,Fwd PSH Flags,False,G1 dependent+P,False
+4,Bwd PSH Flags,False,P,False
+4,Fwd URG Flags,False,G1 dependent,True
+4,Bwd URG Flags,True,none,True
+4,Fwd Header Length,False,G1+G2 touched+P,False
+4,Bwd Header Length,False,P,False
+4,Fwd Packets/s,False,G1+G2 touched+P,False
+4,Bwd Packets/s,False,G1+G2 touched+P,False
+4,Min Packet Length,False,G1+G2 touched+P,False
+4,Max Packet Length,False,G1+G2 touched+P,False
+4,Packet Length Mean,False,G1+G2 touched+P,False
+4,Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+4,Packet Length Variance,False,G1+G1 dependent+G2 touched+P,False
+4,FIN Flag Count,False,P,False
+4,SYN Flag Count,True,none,False
+4,RST Flag Count,True,none,False
+4,PSH Flag Count,False,P,False
+4,ACK Flag Count,False,P,False
+4,URG Flag Count,True,none,True
+4,CWE Flag Count,True,none,False
+4,ECE Flag Count,True,none,False
+4,Down/Up Ratio,False,G1+G1 dependent+G2 touched+P,False
+4,Average Packet Size,False,G1+G2 touched+P,False
+4,Avg Fwd Segment Size,False,G1+G2 touched+P,False
+4,Avg Bwd Segment Size,False,P,False
+4,Fwd Avg Bytes/Bulk,True,none,True
+4,Fwd Avg Packets/Bulk,True,none,True
+4,Fwd Avg Bulk Rate,True,none,True
+4,Bwd Avg Bytes/Bulk,True,none,True
+4,Bwd Avg Packets/Bulk,True,none,True
+4,Bwd Avg Bulk Rate,True,none,True
+4,Subflow Fwd Packets,False,G1+G2 touched+P,False
+4,Subflow Fwd Bytes,False,G1+G2 touched+P,False
+4,Subflow Bwd Packets,False,P,False
+4,Subflow Bwd Bytes,False,P,False
+4,Init_Win_bytes_forward,False,G1 dependent,False
+4,Init_Win_bytes_backward,True,none,False
+4,act_data_pkt_fwd,False,G1+P,False
+4,min_seg_size_forward,True,none,False
+4,Active Mean,False,G1 dependent+G2 touched+G2 coupled+P,False
+4,Active Std,False,G1 dependent+P,False
+4,Active Max,False,G1 dependent+G2 touched+G2 coupled+P,False
+4,Active Min,False,G1 dependent+P,False
+4,Idle Mean,False,G1 dependent+P,False
+4,Idle Std,False,G1 dependent+P,False
+4,Idle Max,False,G1 dependent+P,False
+4,Idle Min,False,G1 dependent+P,False
+5,Flow Duration,False,G1+G2 touched+P,False
+5,Total Fwd Packets,False,G1+G2 touched+P,False
+5,Total Backward Packets,False,P,False
+5,Total Length of Fwd Packets,False,G1+G2 touched+P,False
+5,Total Length of Bwd Packets,False,P,False
+5,Fwd Packet Length Max,False,G1+G2 touched+P,False
+5,Fwd Packet Length Min,False,G1+G2 touched+P,False
+5,Fwd Packet Length Mean,False,G1+G2 touched+P,False
+5,Fwd Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+5,Bwd Packet Length Max,True,none,False
+5,Bwd Packet Length Min,True,none,False
+5,Bwd Packet Length Mean,False,P,False
+5,Bwd Packet Length Std,False,P,False
+5,Flow Bytes/s,False,G1+G2 touched+P,False
+5,Flow Packets/s,False,G1+G2 touched+P,False
+5,Flow IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+5,Flow IAT Std,False,G1+G1 dependent+G2 touched+P,False
+5,Flow IAT Max,False,G1+G1 dependent+G2 touched+P,False
+5,Flow IAT Min,False,G1+G1 dependent+G2 touched+P,False
+5,Fwd IAT Total,False,G1+G1 dependent+G2 touched+P,False
+5,Fwd IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+5,Fwd IAT Std,False,G1+G1 dependent+G2 touched+P,False
+5,Fwd IAT Max,False,G1+G1 dependent+G2 touched+P,False
+5,Fwd IAT Min,False,G1+G1 dependent+G2 touched+P,False
+5,Bwd IAT Total,False,G2 touched+G2 coupled+P,False
+5,Bwd IAT Mean,False,G2 touched+G2 coupled+P,False
+5,Bwd IAT Std,False,P,False
+5,Bwd IAT Max,False,G2 touched+G2 coupled+P,False
+5,Bwd IAT Min,False,P,False
+5,Fwd PSH Flags,False,G1 dependent+P,False
+5,Bwd PSH Flags,False,P,False
+5,Fwd URG Flags,False,G1 dependent,True
+5,Bwd URG Flags,True,none,True
+5,Fwd Header Length,False,G1+G2 touched+P,False
+5,Bwd Header Length,False,P,False
+5,Fwd Packets/s,False,G1+G2 touched+P,False
+5,Bwd Packets/s,False,G1+G2 touched+P,False
+5,Min Packet Length,False,G1+G2 touched+P,False
+5,Max Packet Length,False,G1+G2 touched+P,False
+5,Packet Length Mean,False,G1+G2 touched+P,False
+5,Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+5,Packet Length Variance,False,G1+G1 dependent+G2 touched+P,False
+5,FIN Flag Count,False,P,False
+5,SYN Flag Count,True,none,False
+5,RST Flag Count,True,none,False
+5,PSH Flag Count,False,P,False
+5,ACK Flag Count,False,P,False
+5,URG Flag Count,True,none,True
+5,CWE Flag Count,True,none,False
+5,ECE Flag Count,True,none,False
+5,Down/Up Ratio,False,G1+G1 dependent+G2 touched+P,False
+5,Average Packet Size,False,G1+G2 touched+P,False
+5,Avg Fwd Segment Size,False,G1+G2 touched+P,False
+5,Avg Bwd Segment Size,False,P,False
+5,Fwd Avg Bytes/Bulk,True,none,True
+5,Fwd Avg Packets/Bulk,True,none,True
+5,Fwd Avg Bulk Rate,True,none,True
+5,Bwd Avg Bytes/Bulk,True,none,True
+5,Bwd Avg Packets/Bulk,True,none,True
+5,Bwd Avg Bulk Rate,True,none,True
+5,Subflow Fwd Packets,False,G1+G2 touched+P,False
+5,Subflow Fwd Bytes,False,G1+G2 touched+P,False
+5,Subflow Bwd Packets,False,P,False
+5,Subflow Bwd Bytes,False,P,False
+5,Init_Win_bytes_forward,False,G1 dependent,False
+5,Init_Win_bytes_backward,True,none,False
+5,act_data_pkt_fwd,False,G1+P,False
+5,min_seg_size_forward,True,none,False
+5,Active Mean,False,G1 dependent+G2 touched+G2 coupled+P,False
+5,Active Std,False,G1 dependent+P,False
+5,Active Max,False,G1 dependent+G2 touched+G2 coupled+P,False
+5,Active Min,False,G1 dependent+P,False
+5,Idle Mean,False,G1 dependent+P,False
+5,Idle Std,False,G1 dependent+P,False
+5,Idle Max,False,G1 dependent+P,False
+5,Idle Min,False,G1 dependent+P,False
+6,Flow Duration,False,G1+G2 touched+P,False
+6,Total Fwd Packets,False,G1+G2 touched+P,False
+6,Total Backward Packets,False,P,False
+6,Total Length of Fwd Packets,False,G1+G2 touched+P,False
+6,Total Length of Bwd Packets,False,P,False
+6,Fwd Packet Length Max,False,G1+G2 touched+P,False
+6,Fwd Packet Length Min,False,G1+G2 touched+P,False
+6,Fwd Packet Length Mean,False,G1+G2 touched+P,False
+6,Fwd Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+6,Bwd Packet Length Max,True,none,False
+6,Bwd Packet Length Min,True,none,False
+6,Bwd Packet Length Mean,False,P,False
+6,Bwd Packet Length Std,False,P,False
+6,Flow Bytes/s,False,G1+G2 touched+P,False
+6,Flow Packets/s,False,G1+G2 touched+P,False
+6,Flow IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+6,Flow IAT Std,False,G1+G1 dependent+G2 touched+P,False
+6,Flow IAT Max,False,G1+G1 dependent+G2 touched+P,False
+6,Flow IAT Min,False,G1+G1 dependent+G2 touched+P,False
+6,Fwd IAT Total,False,G1+G1 dependent+G2 touched+P,False
+6,Fwd IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+6,Fwd IAT Std,False,G1+G1 dependent+G2 touched+P,False
+6,Fwd IAT Max,False,G1+G1 dependent+G2 touched+P,False
+6,Fwd IAT Min,False,G1+G1 dependent+G2 touched+P,False
+6,Bwd IAT Total,False,G2 touched+G2 coupled+P,False
+6,Bwd IAT Mean,False,G2 touched+G2 coupled+P,False
+6,Bwd IAT Std,False,P,False
+6,Bwd IAT Max,False,G2 touched+G2 coupled+P,False
+6,Bwd IAT Min,False,P,False
+6,Fwd PSH Flags,False,G1 dependent+P,False
+6,Bwd PSH Flags,False,P,False
+6,Fwd URG Flags,False,G1 dependent,True
+6,Bwd URG Flags,True,none,True
+6,Fwd Header Length,False,G1+G2 touched+P,False
+6,Bwd Header Length,False,P,False
+6,Fwd Packets/s,False,G1+G2 touched+P,False
+6,Bwd Packets/s,False,G1+G2 touched+P,False
+6,Min Packet Length,False,G1+G2 touched+P,False
+6,Max Packet Length,False,G1+G2 touched+P,False
+6,Packet Length Mean,False,G1+G2 touched+P,False
+6,Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+6,Packet Length Variance,False,G1+G1 dependent+G2 touched+P,False
+6,FIN Flag Count,False,P,False
+6,SYN Flag Count,True,none,False
+6,RST Flag Count,True,none,False
+6,PSH Flag Count,False,P,False
+6,ACK Flag Count,False,P,False
+6,URG Flag Count,True,none,True
+6,CWE Flag Count,True,none,False
+6,ECE Flag Count,True,none,False
+6,Down/Up Ratio,False,G1+G1 dependent+G2 touched+P,False
+6,Average Packet Size,False,G1+G2 touched+P,False
+6,Avg Fwd Segment Size,False,G1+G2 touched+P,False
+6,Avg Bwd Segment Size,False,P,False
+6,Fwd Avg Bytes/Bulk,True,none,True
+6,Fwd Avg Packets/Bulk,True,none,True
+6,Fwd Avg Bulk Rate,True,none,True
+6,Bwd Avg Bytes/Bulk,True,none,True
+6,Bwd Avg Packets/Bulk,True,none,True
+6,Bwd Avg Bulk Rate,True,none,True
+6,Subflow Fwd Packets,False,G1+G2 touched+P,False
+6,Subflow Fwd Bytes,False,G1+G2 touched+P,False
+6,Subflow Bwd Packets,False,P,False
+6,Subflow Bwd Bytes,False,P,False
+6,Init_Win_bytes_forward,False,G1 dependent,False
+6,Init_Win_bytes_backward,True,none,False
+6,act_data_pkt_fwd,False,G1+P,False
+6,min_seg_size_forward,True,none,False
+6,Active Mean,False,G1 dependent+G2 touched+G2 coupled+P,False
+6,Active Std,False,G1 dependent+P,False
+6,Active Max,False,G1 dependent+G2 touched+G2 coupled+P,False
+6,Active Min,False,G1 dependent+P,False
+6,Idle Mean,False,G1 dependent+P,False
+6,Idle Std,False,G1 dependent+P,False
+6,Idle Max,False,G1 dependent+P,False
+6,Idle Min,False,G1 dependent+P,False
+7,Flow Duration,False,G1+G2 touched+P,False
+7,Total Fwd Packets,False,G1+G2 touched+P,False
+7,Total Backward Packets,False,P,False
+7,Total Length of Fwd Packets,False,G1+G2 touched+P,False
+7,Total Length of Bwd Packets,False,P,False
+7,Fwd Packet Length Max,False,G1+G2 touched+P,False
+7,Fwd Packet Length Min,False,G1+G2 touched+P,False
+7,Fwd Packet Length Mean,False,G1+G2 touched+P,False
+7,Fwd Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+7,Bwd Packet Length Max,True,none,False
+7,Bwd Packet Length Min,True,none,False
+7,Bwd Packet Length Mean,False,P,False
+7,Bwd Packet Length Std,False,P,False
+7,Flow Bytes/s,False,G1+G2 touched+P,False
+7,Flow Packets/s,False,G1+G2 touched+P,False
+7,Flow IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+7,Flow IAT Std,False,G1+G1 dependent+G2 touched+P,False
+7,Flow IAT Max,False,G1+G1 dependent+G2 touched+P,False
+7,Flow IAT Min,False,G1+G1 dependent+G2 touched+P,False
+7,Fwd IAT Total,False,G1+G1 dependent+G2 touched+P,False
+7,Fwd IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+7,Fwd IAT Std,False,G1+G1 dependent+G2 touched+P,False
+7,Fwd IAT Max,False,G1+G1 dependent+G2 touched+P,False
+7,Fwd IAT Min,False,G1+G1 dependent+G2 touched+P,False
+7,Bwd IAT Total,False,G2 touched+G2 coupled+P,False
+7,Bwd IAT Mean,False,G2 touched+G2 coupled+P,False
+7,Bwd IAT Std,False,P,False
+7,Bwd IAT Max,False,G2 touched+G2 coupled+P,False
+7,Bwd IAT Min,False,P,False
+7,Fwd PSH Flags,False,G1 dependent+P,False
+7,Bwd PSH Flags,False,P,False
+7,Fwd URG Flags,False,G1 dependent,True
+7,Bwd URG Flags,True,none,True
+7,Fwd Header Length,False,G1+G2 touched+P,False
+7,Bwd Header Length,False,P,False
+7,Fwd Packets/s,False,G1+G2 touched+P,False
+7,Bwd Packets/s,False,G1+G2 touched+P,False
+7,Min Packet Length,False,G1+G2 touched+P,False
+7,Max Packet Length,False,G1+G2 touched+P,False
+7,Packet Length Mean,False,G1+G2 touched+P,False
+7,Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+7,Packet Length Variance,False,G1+G1 dependent+G2 touched+P,False
+7,FIN Flag Count,False,P,False
+7,SYN Flag Count,True,none,False
+7,RST Flag Count,True,none,False
+7,PSH Flag Count,False,P,False
+7,ACK Flag Count,False,P,False
+7,URG Flag Count,True,none,True
+7,CWE Flag Count,True,none,False
+7,ECE Flag Count,True,none,False
+7,Down/Up Ratio,False,G1+G1 dependent+G2 touched+P,False
+7,Average Packet Size,False,G1+G2 touched+P,False
+7,Avg Fwd Segment Size,False,G1+G2 touched+P,False
+7,Avg Bwd Segment Size,False,P,False
+7,Fwd Avg Bytes/Bulk,True,none,True
+7,Fwd Avg Packets/Bulk,True,none,True
+7,Fwd Avg Bulk Rate,True,none,True
+7,Bwd Avg Bytes/Bulk,True,none,True
+7,Bwd Avg Packets/Bulk,True,none,True
+7,Bwd Avg Bulk Rate,True,none,True
+7,Subflow Fwd Packets,False,G1+G2 touched+P,False
+7,Subflow Fwd Bytes,False,G1+G2 touched+P,False
+7,Subflow Bwd Packets,False,P,False
+7,Subflow Bwd Bytes,False,P,False
+7,Init_Win_bytes_forward,False,G1 dependent,False
+7,Init_Win_bytes_backward,True,none,False
+7,act_data_pkt_fwd,False,G1+P,False
+7,min_seg_size_forward,True,none,False
+7,Active Mean,False,G1 dependent+G2 touched+G2 coupled+P,False
+7,Active Std,False,G1 dependent+P,False
+7,Active Max,False,G1 dependent+G2 touched+G2 coupled+P,False
+7,Active Min,False,G1 dependent+P,False
+7,Idle Mean,False,G1 dependent+P,False
+7,Idle Std,False,G1 dependent+P,False
+7,Idle Max,False,G1 dependent+P,False
+7,Idle Min,False,G1 dependent+P,False
+8,Flow Duration,False,G1+G2 touched+P,False
+8,Total Fwd Packets,False,G1+G2 touched+P,False
+8,Total Backward Packets,False,P,False
+8,Total Length of Fwd Packets,False,G1+G2 touched+P,False
+8,Total Length of Bwd Packets,False,P,False
+8,Fwd Packet Length Max,False,G1+G2 touched+P,False
+8,Fwd Packet Length Min,False,G1+G2 touched+P,False
+8,Fwd Packet Length Mean,False,G1+G2 touched+P,False
+8,Fwd Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+8,Bwd Packet Length Max,True,none,False
+8,Bwd Packet Length Min,True,none,False
+8,Bwd Packet Length Mean,False,P,False
+8,Bwd Packet Length Std,False,P,False
+8,Flow Bytes/s,False,G1+G2 touched+P,False
+8,Flow Packets/s,False,G1+G2 touched+P,False
+8,Flow IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+8,Flow IAT Std,False,G1+G1 dependent+G2 touched+P,False
+8,Flow IAT Max,False,G1+G1 dependent+G2 touched+P,False
+8,Flow IAT Min,False,G1+G1 dependent+G2 touched+P,False
+8,Fwd IAT Total,False,G1+G1 dependent+G2 touched+P,False
+8,Fwd IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+8,Fwd IAT Std,False,G1+G1 dependent+G2 touched+P,False
+8,Fwd IAT Max,False,G1+G1 dependent+G2 touched+P,False
+8,Fwd IAT Min,False,G1+G1 dependent+G2 touched+P,False
+8,Bwd IAT Total,False,G2 touched+G2 coupled+P,False
+8,Bwd IAT Mean,False,G2 touched+G2 coupled+P,False
+8,Bwd IAT Std,False,P,False
+8,Bwd IAT Max,False,G2 touched+G2 coupled+P,False
+8,Bwd IAT Min,False,P,False
+8,Fwd PSH Flags,False,G1 dependent+P,False
+8,Bwd PSH Flags,False,P,False
+8,Fwd URG Flags,False,G1 dependent,True
+8,Bwd URG Flags,True,none,True
+8,Fwd Header Length,False,G1+G2 touched+P,False
+8,Bwd Header Length,False,P,False
+8,Fwd Packets/s,False,G1+G2 touched+P,False
+8,Bwd Packets/s,False,G1+G2 touched+P,False
+8,Min Packet Length,False,G1+G2 touched+P,False
+8,Max Packet Length,False,G1+G2 touched+P,False
+8,Packet Length Mean,False,G1+G2 touched+P,False
+8,Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+8,Packet Length Variance,False,G1+G1 dependent+G2 touched+P,False
+8,FIN Flag Count,False,P,False
+8,SYN Flag Count,True,none,False
+8,RST Flag Count,True,none,False
+8,PSH Flag Count,False,P,False
+8,ACK Flag Count,False,P,False
+8,URG Flag Count,True,none,True
+8,CWE Flag Count,True,none,False
+8,ECE Flag Count,True,none,False
+8,Down/Up Ratio,False,G1+G1 dependent+G2 touched+P,False
+8,Average Packet Size,False,G1+G2 touched+P,False
+8,Avg Fwd Segment Size,False,G1+G2 touched+P,False
+8,Avg Bwd Segment Size,False,P,False
+8,Fwd Avg Bytes/Bulk,True,none,True
+8,Fwd Avg Packets/Bulk,True,none,True
+8,Fwd Avg Bulk Rate,True,none,True
+8,Bwd Avg Bytes/Bulk,True,none,True
+8,Bwd Avg Packets/Bulk,True,none,True
+8,Bwd Avg Bulk Rate,True,none,True
+8,Subflow Fwd Packets,False,G1+G2 touched+P,False
+8,Subflow Fwd Bytes,False,G1+G2 touched+P,False
+8,Subflow Bwd Packets,False,P,False
+8,Subflow Bwd Bytes,False,P,False
+8,Init_Win_bytes_forward,False,G1 dependent,False
+8,Init_Win_bytes_backward,True,none,False
+8,act_data_pkt_fwd,False,G1+P,False
+8,min_seg_size_forward,True,none,False
+8,Active Mean,False,G1 dependent+G2 touched+G2 coupled+P,False
+8,Active Std,False,G1 dependent+P,False
+8,Active Max,False,G1 dependent+G2 touched+G2 coupled+P,False
+8,Active Min,False,G1 dependent+P,False
+8,Idle Mean,False,G1 dependent+P,False
+8,Idle Std,False,G1 dependent+P,False
+8,Idle Max,False,G1 dependent+P,False
+8,Idle Min,False,G1 dependent+P,False
+9,Flow Duration,False,G1+G2 touched+P,False
+9,Total Fwd Packets,False,G1+G2 touched+P,False
+9,Total Backward Packets,False,P,False
+9,Total Length of Fwd Packets,False,G1+G2 touched+P,False
+9,Total Length of Bwd Packets,False,P,False
+9,Fwd Packet Length Max,False,G1+G2 touched+P,False
+9,Fwd Packet Length Min,False,G1+G2 touched+P,False
+9,Fwd Packet Length Mean,False,G1+G2 touched+P,False
+9,Fwd Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+9,Bwd Packet Length Max,True,none,False
+9,Bwd Packet Length Min,True,none,False
+9,Bwd Packet Length Mean,False,P,False
+9,Bwd Packet Length Std,False,P,False
+9,Flow Bytes/s,False,G1+G2 touched+P,False
+9,Flow Packets/s,False,G1+G2 touched+P,False
+9,Flow IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+9,Flow IAT Std,False,G1+G1 dependent+G2 touched+P,False
+9,Flow IAT Max,False,G1+G1 dependent+G2 touched+P,False
+9,Flow IAT Min,False,G1+G1 dependent+G2 touched+P,False
+9,Fwd IAT Total,False,G1+G1 dependent+G2 touched+P,False
+9,Fwd IAT Mean,False,G1+G1 dependent+G2 touched+P,False
+9,Fwd IAT Std,False,G1+G1 dependent+G2 touched+P,False
+9,Fwd IAT Max,False,G1+G1 dependent+G2 touched+P,False
+9,Fwd IAT Min,False,G1+G1 dependent+G2 touched+P,False
+9,Bwd IAT Total,False,G2 touched+G2 coupled+P,False
+9,Bwd IAT Mean,False,G2 touched+G2 coupled+P,False
+9,Bwd IAT Std,False,P,False
+9,Bwd IAT Max,False,G2 touched+G2 coupled+P,False
+9,Bwd IAT Min,False,P,False
+9,Fwd PSH Flags,False,G1 dependent+P,False
+9,Bwd PSH Flags,False,P,False
+9,Fwd URG Flags,False,G1 dependent,True
+9,Bwd URG Flags,True,none,True
+9,Fwd Header Length,False,G1+G2 touched+P,False
+9,Bwd Header Length,False,P,False
+9,Fwd Packets/s,False,G1+G2 touched+P,False
+9,Bwd Packets/s,False,G1+G2 touched+P,False
+9,Min Packet Length,False,G1+G2 touched+P,False
+9,Max Packet Length,False,G1+G2 touched+P,False
+9,Packet Length Mean,False,G1+G2 touched+P,False
+9,Packet Length Std,False,G1+G1 dependent+G2 touched+P,False
+9,Packet Length Variance,False,G1+G1 dependent+G2 touched+P,False
+9,FIN Flag Count,False,P,False
+9,SYN Flag Count,True,none,False
+9,RST Flag Count,True,none,False
+9,PSH Flag Count,False,P,False
+9,ACK Flag Count,False,P,False
+9,URG Flag Count,True,none,True
+9,CWE Flag Count,True,none,False
+9,ECE Flag Count,True,none,False
+9,Down/Up Ratio,False,G1+G1 dependent+G2 touched+P,False
+9,Average Packet Size,False,G1+G2 touched+P,False
+9,Avg Fwd Segment Size,False,G1+G2 touched+P,False
+9,Avg Bwd Segment Size,False,P,False
+9,Fwd Avg Bytes/Bulk,True,none,True
+9,Fwd Avg Packets/Bulk,True,none,True
+9,Fwd Avg Bulk Rate,True,none,True
+9,Bwd Avg Bytes/Bulk,True,none,True
+9,Bwd Avg Packets/Bulk,True,none,True
+9,Bwd Avg Bulk Rate,True,none,True
+9,Subflow Fwd Packets,False,G1+G2 touched+P,False
+9,Subflow Fwd Bytes,False,G1+G2 touched+P,False
+9,Subflow Bwd Packets,False,P,False
+9,Subflow Bwd Bytes,False,P,False
+9,Init_Win_bytes_forward,False,G1 dependent,False
+9,Init_Win_bytes_backward,True,none,False
+9,act_data_pkt_fwd,False,G1+P,False
+9,min_seg_size_forward,True,none,False
+9,Active Mean,False,G1 dependent+G2 touched+G2 coupled+P,False
+9,Active Std,False,G1 dependent+P,False
+9,Active Max,False,G1 dependent+G2 touched+G2 coupled+P,False
+9,Active Min,False,G1 dependent+P,False
+9,Idle Mean,False,G1 dependent+P,False
+9,Idle Std,False,G1 dependent+P,False
+9,Idle Max,False,G1 dependent+P,False
+9,Idle Min,False,G1 dependent+P,False

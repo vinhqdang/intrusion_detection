@@ -1,0 +1,21 @@
+{
+  "seeds": 10,
+  "n_flows": 300,
+  "n_aug": 2000,
+  "quick": false,
+  "strong_levels": 5,
+  "strong_restarts": 1,
+  "primary": {
+    "seconds": 1867.0,
+    "rows_after_dedup": 623253
+  },
+  "runtime_s": 5745.3,
+  "all_flows": {
+    "seconds": 1988.6,
+    "rows_after_dedup": 651617
+  },
+  "drop_ambiguous": {
+    "seconds": 1874.6,
+    "rows_after_dedup": 601063
+  }
+}
